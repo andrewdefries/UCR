@@ -1,0 +1,311 @@
+\chapter{Phenotypes of Bioactives}
+
+%\part{}
+
+\section{Abstract}
+
+We discovered a handful of bioactive terminal acetylenes from the chemical space available in the clickable library. These probes were potent to inhibit the hypocotyl and root growth of {\it Arabidopsis}. Bioactivity of Clade M and Clade O compounds was confirmed using assays appropriate to the specific phenotype. The clade M compounds were tested in a 24-well plate to confirm CLK003D03 was the most potent to inhibit germination of Col-0 and Ler {\it Arabidopsis} ecotypes. Bagplot analysis of the clade O compound CLK026D11 demonstrates it is potent as a volatile to inhibit the growth of hypocotyls and caused a radial swelling phenotype of the hypocotyl cell file, as visualized by scanning electron microscopy (SEM). 
+
+\section{Introduction}
+
+\begin{figure}
+\includegraphics[scale=0.50]{img54}
+\caption{The end game of our forward genetic investigation is to determine the mechanism of action (MOA) for newly discovered probes. Two ecotypes Col-0 and Ler were used together in a phenotype analysis platform that integrates quantitative and qualitative length variables. The goal to produce robust phenotype descriptions that enable the identification of target allele(s) for novel bioactives, an investigation which will be described in detail (Chapter 5: Target identification efforts via EMS).}
+\label{fig:MOA}
+\end{figure}
+
+
+Our rationale was to use {\it Arabidopsis thaliana} and classical genetics to determine the mechanism of action of novel probes discovered \cite{dai2005genetic,grozinger2001identification}. The analysis included examination of several active compound classes using the two ecotypes Columbia-0 (Col) and Landsberg erecta (Ler)\cite{Zhao_Hyr1}. In this process qualitative and quantitative variables were collected and used in a combination of approaches to determine the Mechanism Of Action (MOA) \cite{lukowitz2000positional}. Discussion and review of contemporary MOA approaches will be elucidated in the coming chapter (Chapter 4: Target Identification efforts with EMS) and are reviewed briefly here \cite{blackwell2003chemical}. The objective of this chapter was to establish which probes were amenable to downstream examination. 
+
+%show images from defence. The first is schematic of the photography apparatus and camera angles. The other explains high throughput image processing for the variables of interest. Modify to include Russian Doll, Cotyledon clock etc.
+
+\section{Materials and Methods}
+
+\subsection{Twenty-four well assay plates for the Clade M germination inhibitors}
+
+Standard 24-well assay plates were used to grow {\it Arabidopsis} at different doses of the clade M germination inibitors. Plates were prepared as indicated previously (Materials and Methods: Chapter 3).
+
+\subsection{Preparation of assay plates for the testing of the bioactive volatile CLK026D11}
+
+Single well assay plates (NUNC) were grown vertically and taped together with different doses of 1, 5, 10, 15, 25 $\mu$M CLK026D11 and (1{\%}) DMSO was used as control. Growth media and seed preparation was indicated previously (Materials and Methods: Chapter 3), except seedlings were placed onto the media on the fourth day or the first day of growth in dark. Plates were photographed on the seventh day using a digital camera and LED transillumination. 
+
+%\subsection{Qualitative bagplot: image aquisition, photography setup, and digital processing for length variables}
+
+\subsection{Quantitative bagplot: image acquisition, photography setup, and digital processing for length variables}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{2D_Capture}
+\caption{Two dimensional capture of vertically grown {\it Arabidopsis thaliana} by digital imaging. A. Photographs were taken of the assay plate from a fixed distance above plates transilluminated from below. B. Measurements of the hypocotyl (shown as x variable for x-axis) and root (shown as y variable for y-axis are conducted using ImageJ. C. Demonstration of typical control (DMSO 1{\%} data plotted as a bi-variate x-y graph for hypocotyl and root length of Col and Ler seedlings.)}
+\label{fig:2D_Capture}
+\end{figure}
+
+Images for quantitative bagplots were acquired using a hand held 2.0 Mega Pixel digital camera. Assay plates were photographed using standard position and distances for consistancy (Figure~\ref{fig:2D_Capture}). Illumination was provided by an LED transilluminator placed directly underneath the assay plates. Photographs were measured by hand using the ImageJ polyline tool. Hypocotyl and root variables were exported from ImageJ and processed in R using the bivariate bagplot() call in the package aplapack.
+
+%\subsection{Bivariate bagplot using Bioconductor aplpack)
+
+%R code
+
+\subsection{Preparation of {\it Arabidopsis} for scanning electron microscopy}
+
+Arabidopsis seedlings prepared identically to the chemical genetic screen are imbibed for 4 days at 4${}^\circ$ C and grown for 3 days in the dark. On the final day seedlings were transferred directly onto a Hitachi scanning electron microscope (SEM) specimen stage with adhesive and flash frozen immediately using isopentane chilled via liquid nitrogen. The sample was placed into the vacuum chamber of the SEM for electron scan and imaging. 
+
+%add magnification power
+\clearpage
+
+\section{Results}
+
+\subsection{Revisiting the clade M germination inhibitors}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img55}
+\caption{Two dimensional multi-dimensional scaling (2D-MDS) plot showing clade M germination inhibitors as black circles in the clickable library. Colors indicate compounds that group together and are 70{\%} similar. The number of colors for plotting is limited as such the colors have been re-used on other clades. Blue circle inset shows clade M compounds in the plot.}
+\label{fig:FAEs}
+\end{figure}
+
+The clade M germination inhibitors (Figure ~\ref{fig:CladeM_SAR}) are members of a clade of fatty acid n-acylethanolamine (Figure ~\ref{fig:FAEs}) in the clickable library \cite{kilaru2007n,teaster2007n}. A Multiple Common Substructure (MCS) consisting of a unsaturated hydrocarbon chain of length (C8) terminating with ethanolamine linked heterocycles (Figure ~\ref{fig:CladeM_SAR}) was used as a query to identify related compounds in the clickable collection (Figure ~\ref{fig:PhysicochemicalCompare}). 
+
+\begin{figure}
+\includegraphics[scale=0.48]{img56}
+\caption{Clade M and analogs in the clickable collection.}
+\label{fig:CladeMQueryZINC80K}
+\end{figure}
+
+The clade M and analogs in the clickable collection and cited literature have been collected in this MDS space for comparison (Figure ~\ref{fig:CladeMQueryZINC80K}). Compounds are shown inset the MDS space with a line connecting to the coordinate corresponding to actual scaled distance.
+
+\begin{figure}
+\includegraphics[scale=0.40]{img57}
+\caption{Clade M and analogs in the clickable collection and  and relevant literature.}
+\label{fig:CladeMQueryLit}
+\end{figure}
+
+A number of related compounds have been mentioned previously in the literature in relation to {\it Arabidopsis} growth regulation. These compounds have been collected into an MDS space for inspection (Figure ~\ref{fig:CladeMQueryLit})\cite{kilaru2007n, kim2010fatty}\cite{teaster2007n}. 
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{img58}
+\caption{Dose curve of select clade M compounds differentiates CLK003D03 as a strong candidate at 25 $\mu$M and 15 $\mu$M. A. CLK003D03 is the most potent clade M compound to inhibit germination of Col-0. B. CLK003D03 is equally potent to inhibit the germination of the Ler ecotype}
+\label{fig:CladeMDoseCurve}
+\end{figure}
+
+A detailed structure activity relationship was performed to determine the potency of clade M germination inhibitors (Figure ~\ref{fig:CladeMDoseCurve} A-B). The clade M compounds were not active as fluorescent conjugates with our amine azide linker (data not shown), and were used directly as is. The compound CLK003D03 was used to generate resistant mutants in {\it Arabidopsis} and identify a causative allele (not described here). 
+
+\subsection{Clade N inhibitors of anisotropic hypocotyl growth}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img59}
+\caption{Clade of compounds related to CLK026D11 possessing a camphor-like carbon skeleton shown as black dots. Colors indicate compounds that group together and are 70{\%} similar. The number of colors for plotting is limited as such the colors have been re-used on other clades.}
+\label{fig:CamphorLikeClade}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img60}
+\caption{Reported synthesis of CLK026D11 from verbanone  \cite{dikusar2001synthesis}.}
+\label{fig:CLK026D11Retrosynthesis}
+\end{figure}
+
+Clade N, with the core iodoacetylene member CLK026D11 was compared to compounds with similar pinane-like and adamantane carbon skeletons in the clickable library (Figure ~\ref{fig:CamphorLikeClade}A, inset blue circle, see supplementary table). Despite possessing similar carbon skeletons or iodoacetylenes the compounds CLK026D11 and CLK026H11 distinctly caused the same phenotype (Figure ~\ref{fig:PTFP2}). CLK026D11 is similar to compounds in natural product datasets, and this may be a consequence of the synthesis of CLK026D11 and CLK026H11 from verbenone and verbanone respectively (Figure ~\ref{fig:CLK026D11Retrosynthesis}A-D)\cite{dikusar2001synthesis}.
+
+\subsubsection{CLK026D11 is a potent volatile inhibitor of anisotropic growth}
+
+Volatiles, such as ethylene, can function as growth regulators in plants \cite{lehman1996hookless1}. Preparation of the iodoacetylenes CLK026D11 and CLK026H11 describes the compounds as unstable, although 1HNMR analysis confirmed the structure as reported \cite{dikusar2001synthesis}. Volatility of CLK026D11 was suspected due to a low molecular weight and the reason for observed variation on the edges of treatment and control plates. An experiment was conducted to demonstrate CLK026D11 was potent at a distance. {\it Arabidopsis} was grown in media vertically and another plate containing compound was placed on top to exchange head space.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img61}
+\caption{CL026D11 is bioactive as a volatile. A. Merge of DMSO. B. Increasing doses of CLK026D11 causes a significant growth defect as low as 1$\mu$M. C. Iodine and the headspace of this plate does not cause growth inhibition. D. The head space of CLK026D11 (D5H) causes similar growth defects as plants grown directly on the same dose. Doses are denoted D1-5 for 1, 5, 10,, 15, 25 $\mu$M.}
+\label{fig:CLK026D11ComesThroughTheAir}
+\end{figure}
+%annotate image more to follow comparison symbols or circles.
+
+Growth of plates containing DMSO alone showed typical bagplot variance whereas CLK026D11 was potent to inhibit hypocotyl and root growth down to 1 $\mu$M (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}A and B). Iodine was used as a control as it was suspected that the iodoacetylene CLK026D11 may degrade to release iodine. Nonetheless, iodine at all concentrations was inactive, and did not cause a phenotype by exchanging head space with the control plate (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}C).  CLK026D11 was potent to produce identical phenotypes in seedlings on the control plate when place a few centimeters away at 25 $\mu$M doses (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}D).
+
+\subsubsection{Cellular features of the perturbation caused by CLK026D11}
+
+\begin{figure}\centering
+\includegraphics[scale=0.15]{img62}
+\caption{CLK026D11 causes anisotropic hypocotyl growth phenotypes with a handedness similar to chuboxypyr. A. Columbia-0 seedling control treatment (1{\%} DMSO). B. 25$\mu$M of chuboxypyr causes right handed twisting of cell files in the hypocotyl. C. 1 $\mu$M dose of CLK026D11 causes a similar right handed twisting defect with enhanced severity. D. 5 $\mu$M of CLK026D11 causes loss of cell polarity and leads to swollen and bulging cells. Scale bar shows 300 $\mu$ meters.}
+\label{fig:CLK026D11SEM}
+\end{figure}
+
+Low doses of CLK026D11 and structurally dissimilar chuboxypyr \cite{Zhao_Hyr1} induced right handed helical hypocotyl twisting as visualized by scanning electrom microscopy (SEM) (Figure ~\ref{fig:CLK026D11SEM}B and C), whereas higher doses disrupted etiolated ansiotropoic hypocotyl expansion to result in radially expanding cells rather than typical expansion lengthwise against gravity (Figure ~\ref{fig:CLK026D11SEM}D). These growth features were known to be caused by a number of structurally dissimilar compounds such as oryzalin \cite{bannigan2006cortical,bartels1973comparison}, taxol \cite{baskin1994morphology,morejohn1987oryzalin}, and morlin \cite{debolt2007morlin} with modes of action related to microtubule homeostasis [185] and cellulose synthase function (CeSA) \cite{debolt2007morlin}. 
+
+\section{Summary and Discussion}
+
+\subsubsection{CLK026D11 is unique and potent bioactive but could not be used to reveal mechanism of action (MOA)}
+
+Exploration of the swollen cell phenotype caused by CLK026D11 and CLK026H11 (Clade O) is of significance to elucidate molecular and cellular events that lead to the adaptive evolution of skotomorphogenesis and etiolated growth in a number of angiosperms \cite{gendreau1997cellular, gendreau1998phytochrome}. The clade N compounds phenocopy mutants characterized as microtubule proteins \cite{nakamura2004low} and can be examined further with mutant analysis. 
+
+%explain this assay in methods as well as iodine dissolution
+
+
+%Bioactivity of CLK026D11 across Eukaryotic taxa (data not shown) was interesting but did not provide complementary evidence to determine the MOA in {\it Arabidopsis}. 
+
+Clade M is has probes that come with a literature history, thus when evidence is discovered there is already information available for comparison. We will see how one of two clade M probes can be used to find the responsible allele in Chapter 5. Target identification efforts with EMS. 
+
+The bioactivity of the CLK026D11 was interesting but was difficult to determine MOA in {\it Arabidopsis} since the compound was volatile in the growth media and caused a significant amount of phenotype variation in large plates. CLK026D11 did participate in the click reaction to give the expected product, but was not bioactive when reacted with the fluorophore azide building blocks tested. Therefore, CLK026D11 was not useful, in our scheme, as a tagged compound and was discarded.
+
+%\section{conclusion}
+
+%\part{}
+
+\section{Abstract}
+
+Chemical genetic screening of the combinatorial click reactions with different building blocks and dye-azides (Chapter 3) enabled us to find several 1,2,3-triazoles to study in detail. Four compound classes and selected nearest neighbors as dansyl block A conjugates were further evaluated. By the use of quantitative bagplots phenotypic trends were identified to evaluate the diversity of growth responses in two {\it Arabidopsis} accessions. The bioactives from click reactions with CLK021C05, CLK024F02, and CLK042A09 were grouped separately since they are distinct compound classes. In fact, through comparison of bagplots we can determine that each of the aforementioned compound classes inhibit hypocotyl and root growth in a distinct way as can be seen by the bagplot characteristics. 
+
+\section{Results}
+
+\subsection{Bioactives explored quantitatively}
+\begin{figure}
+\includegraphics[scale=0.40]{img63}
+\caption{MDS of bioactive acetylenes explored quantitatively in this section, shown as parent acetylenes. A. CLK021C05. B. CLK019G11. C. CLK024F02 D. Proposed de-chlorinated CLK024F02 E. CLK001F03. F. CLK017F11. G. CLK042A09. H. CLK039G03.}
+\label{fig:QuantitativePhenotypesPanelMDS}
+\end{figure}
+
+Several bioactives were identified from combinatorial libraries (Figure ~\ref{fig:QuantitativePhenotypesPanelMDS}). These bioactives will be explored quantitatively in this chapter. 
+
+\subsection{Hypocotyl and root growth as bivariate bagplots}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{BagplotDemo}
+\caption{The bagplot visualization will be used to for hypocotyl (x-axis) and root (y-axis) values for Col (shown in blue) and Ler (shown in green). A. Average of control treatments with 1{\%} DMSO. B-C. Separate replicates shown have subtle variation but the averages (the center hull of the bagplots) are similar.}
+\label{fig:BagplotDemo}
+\end{figure}
+
+To further evaluate bioactives the hypocotyl and root length growth in the presence of compounds was quantitatively determined using Col-0 and Ler accessions. Data is displayed in the bi-variate bagplot graphs in which the x-axis represents the hypocotyl values and the y-axis represents the root values. To start out analysis observe the control values for both Col and Ler are reproducible and consider the average over replicates as a reference for expected values (Figure ~\ref{fig:BagplotDemo}A-D). 
+
+%explain bagplot in relation to SD and significance. Have demo bagplot showing the bag hull, etc.
+
+\subsection{CLK021C05 Dansyl and derivatives: poor potency and potential for development}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img64}
+\caption{CLK021C05 dansyl block A is bioactive at high doses. A. Bagplot showing average of DMSO treatments. B. CLK021C05 dansyl block A at doses D1-D3 do not look much different from control. C. The D4 dose of CLK021C05 dansyl block A shows visible growth inhibition that continues to D6. D. High doses of CLK021C05 at D7-10 are strongly inhibited for hypcotyl and root growth compared to the nearest neighbor CLK019G11 dansyl block A at similar doses. D1-D10 are doses 1,5,15,25,50,75,100,150,175,200 $\mu$M.}
+\label{fig:CLK021C05OpenShut}
+\end{figure}
+
+The lead bioactive CLK021C05 dansyl block A, was considered not potent enough for further investigation (Figure ~\ref{fig:CLK021C05OpenShut}). The bioactive effects of CLK021C05 dansyl block A were evident at 100 $\mu$M (Figure ~\ref{fig:CLK021C05OpenShut}C). However an analog CLK019G11 dansyl was inactive found even at 200 $\mu$M (Figure ~\ref{fig:CLK021C05OpenShut}D). Based on lack of response at a high dose CLK019G11 dansyl is a good negative control. 
+
+\subsection{CLK024F02 an inhibitor of growth in {\it Arabidopsis}}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img65}
+\caption{CLK024F02 acetylene dose curve with Col (blue) and Ler (green). A-D. Doses are 1, 5, 25, and 50 $\mu$M.}
+\label{fig:CLK024F02RH}
+\end{figure}
+
+Testing of CLK024F02 indicated the mean values for hyocotyl and root were halved around 50 $\mu$M for both Col and Ler (Figure ~\ref{fig:CLK024F02RH}). CLK024F02 caused bleached cotyledons in etiolated seedlings and delayed response upon exposure to light in {\it Arabidopsis thaliana} (data not shown).
+
+%show greening data
+
+\subsection{CLK024F02 dansyl block A is an inhibitor of hypocotyl and root growth in {\it Arabidopsis thaliana}}
+
+%consider showing both trials. Trial1 and Trial2.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img66}
+\caption{Dose curve for CLK024F02 dansyl block A. A. Merge of DMSO has expected values. B. 1 and 5 $\mu$M do not inhibit growth. C. 25 and 50 $\mu$M cause a reduction in growth. D. Higher doses 75 and 100 $\mu$M further inhibit growth.}
+\label{fig:CLK024F02D}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.50]{img67}
+\caption{Phenotypes of CLK024F02 dansyl on {\it Arabidopsis} Columbia-0 ecotype. A-C. Doses of 25, 50, and 75 $\mu$M of CLK024F02 dansyl block A. Scale bar is 2 mm.}
+\label{fig:CLK024F02DoseCurvePretty}
+\end{figure}
+
+The 1,2,3-triazole CLK024F02 dansyl block A was bioactive and reduced hypocotyl and root growth reproducibly (Figure ~\ref{fig:CLK024F02D}). The phenotype of CLK024F02 dansyl block A appeared distinct from the acetylene CLK024F02 (Figure ~\ref{fig:CLK024F02DoseCurvePretty}A-C) and did not cause cotyledon bleaching as observed for CLK024F02. This compound also resulted in swollen hypocotyls (Figure ~\ref{fig:CLK024F02DoseCurvePretty}C), although this phenotype was not quantified.
+
+
+\subsection{CLK024F02 dansyl diazirine is an inhibitor of hypocotyl and root growth in {\it Arabiodpsis thaliana}}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img68}
+\caption{CLK024F02 dansyl diazirine quantitative dose curve on Col (blue) and Ler (green). A-F. Treatments with DMSO, 1, 5, 10, 15 and 36 $\mu$M CLK024F02 dansyl diazirine.}
+\label{fig:CLK024F02DD}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img69}
+\caption{CLK041B06 dansyl block A is a bioactive nearest neighbor to CLK024F02 dansyl block A. A-D. Treatments with doses D1-D9, up to 150 $\mu$M cause growth inhibition at D4-D6 and at higher doses. Doses D1-D9 are 1,15,25,50,75, 100,125, 150, 200 $\mu$M.}
+\label{fig:CLK041B06D}
+\end{figure}
+
+%consider showing the bagplot of CLK024F02 dansyl from this same trial, sinc the scale bars are same.
+
+The 1,2,3-triazole CLK024F02 dansyl diazirine is bioactive and produces a phenotype similar to the dansyl block A version (Figure ~\ref{fig:CLK024F02DD}). A search for inactive analogs for 1,2,3-triazole of CLK024F02 in the clickable library was unsuccessful despite a search using a number of candidates were generated from the clickable library. The closest candidate, in structure, CLK041B06 dansyl appeared to cause a different phenotype, and was abandoned (Figure ~\ref{fig:CLK041B06D}).
+
+%Have table with tanimoto score of compounds related to CLK024F02. 
+%make query2hwriterTableout.R  %take CMPID as query and give table.
+
+Preliminary analysis of CLK024F02 analogs in the clickable library suggested substitutions on the heterocycle and on the propargyl group lead to a decrease in bioactivity of the 1,2,3-triazole block A conjugate. The phenotypic relationship between the analogs could not be established and the MCS of the similar compounds was very small, thereby misrepresenting similarity in the small clickable set. Synthesis and testing of the de-chlorinated version of CLK024F02 (Figure ~\ref{fig:QuantitativePhenotypesPanelMDS}D), 2-(prop-2-yn-1-ylsulfanyl)-1,3-benzoxazole from 2,3-dihydro-1,3-benzoxazole-2-thione, may be a useful step step in the search for an inactive analog. 
+
+%[Ray and Ghosh]
+%fix Ray and Ghosh
+%show table of options for purchase
+
+\subsection{CLK042A09 is a weak inhibitor of hypocotyl and root growth}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img70}
+\caption{CLK042A09 acetylene quantitative dose curve with Col and Ler. A-D. 1, 5, 25 and 50 $\mu$M CLK042A09.}
+\label{fig:CLK042A09RH}
+\end{figure}
+
+The sulfonamide CLK042A09 or N-({2-[(methylsulfamoyl)methyl]phenyl}methyl)-4-[(prop-2-yn-1-yl)sulfamoyl]benzamide was the most interesting dansyl block A lead. The terminal acetylene CLK042A09 was not a potent inhibitor of hypocotyl and root growth even at 50 $\mu$M (Figure ~\ref{fig:DemoBioactiveClickReaction}) and (Figure ~\ref{fig:CLK042A09RH})A-D. 
+
+\subsection{CLK042A09 dansyl block A is an inhibitor of hypocotyl and root growth}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img71}
+\caption{CLK042A09 dansyl block A quantitative dose curve. A. DMSO control. B. Doses D1 and D2 seem to elongate the root, whereas dose D3 causes some root inhibition. C. Doses D4-6 have more pronounced effects on growth. D. Treatment at higher doses may have confounding results due to precipitation. Doses D1-D5 are 5, 25,50, 75, 100 $\mu$M.}
+\label{fig:CLK042A09D}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.50]{img72}
+\caption{CLK042A09 dansyl block A is bioactive compared to the nearest neighbor CLK039G03 dansyl block A. A-C. 25, 50, and 75 $\mu$M of CLK042A09 dansyl block A. D. Seedlings treated with 100 $\mu$M CLK039G03 dansyl block A are not inhibited. Scale bar is 2 mm.}
+\label{fig:CLK042A09DoseCurvePretty}
+\end{figure}
+
+CLK042A09 dansyl block A was potent to inhibit root length by half at 15 $\mu$M and 5 $\mu$M (Figure ~\ref{fig:CLK042A09D}) as seen in Figure ~\ref{fig:CLK042A09D}A-C. The swollen hypocotyl and short root phenotype caused by CLK042A09 dansyl block A was reminiscent of ethylene and cellulose synthase mutants. 
+
+\subsection{CLK042A09 analogs CLK039G03 and CLK039G03 dansyl block A are inactive}
+
+The analog CLK039G03 dansyl block A was not active at 100$\mu$M (Figure ~\ref{fig:CLK042A09DoseCurvePretty}D) despite close similarity to CLK042A09. %show in a table similarity
+
+\subsection{CLK042A09 dansyl diazirine is an inhibitor of hypocotyl and root growth in {\it Arabidopsis thaliana}}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{img73}
+\caption{CLK042A09 dansyl diazirine quantitative dose curve of Col (blue) and Ler (green). A-F. Treatments with DMSO, 1, 5, 15, and 36 $\mu$M of CLK042A09 dansyl diazirine}
+\label{fig:CLK042A09DD}
+\end{figure}
+
+Bioactivity of CLK042A09 dansyl diazirine was identical to the dansyl block A version (Figure ~\ref{fig:CLK042A09D}) compared to (Figure ~\ref{fig:CLK042A09DD}).
+
+\section{Summary and Discussion}
+
+Several promising candidates for fluorescent probes (Figure ~\ref{fig:QuantitativePhenotypesPanelMDS}) were evaluated for potency to disrupt early seedling growth. Bi-variate bagplot graphs were used to characterize the domains of hypocotyl and root values under varying doses. CLK021C05 Dansyl did not prove to be potent enough to develop further despite having an inactive analog CLK019G11 Dansyl (Figure ~\ref{fig:CLK021C05OpenShut}). 
+
+The next probe CLK024F02 Dansyl was evaluated another day from the parent acetylene (shown with a different pixel scale) (Figure ~\ref{fig:CLK024F02D}). Nonetheless, it could be determined that CLK024F02 Dansyl (Figure ~\ref{fig:CLK024F02D}) was moderately stronger as a fluorescent probe, and this trend was similar for the diazirine functionalized version CLK024F02 Dansyl Diazirine (Figure ~\ref{fig:CLK024F02DD}). An inactive analog was not found. 
+
+The last probe CLK042A09 Dansyl, although the biggest, had the most dramatic change in bioactivity as a fluorescent probe (Figure ~\ref{fig:CLK042A09D}). The parent acetylene was mildly bioactive (Figure ~\ref{fig:CLK042A09RH}), but we can observe large changes in bioactivity in the final fluorescent probe.
+
+
+\section{Conclusion}
+
+The best candidate for further investigation was CLK042A09 dansyl. Therefore, the diazirine version may be used for covalent efforts to identify the target, and was selected as the focus of a later chapter (Chapter 6: Target Identification through Covalent Capture). A complement to the dose curve analysis would be a resistant individual or line. This is the goal of our analysis in the next chapter (Chapter 5: Target Identification Efforts through EMS screening).
+
+

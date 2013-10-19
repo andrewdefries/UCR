@@ -1,0 +1,912 @@
+\chapter{Chemical Genetic Screen}
+
+\part{}
+
+\section{Abstract}
+
+A library of 4,002 terminal acetylenes, the clickable library, and a collection of combinatorial reactions from this library were tested on {\it Arabidopsis} in high throughput. Our objective was to identify the subset of probes with biological effects on {\it Arabidopsis thaliana} by using the small plant growing in the dark as a reporter \cite{pennacchio2005arabidopsis,tojo2006simple}. In total 2.9 {\%} of terminal acetylenes in the clickable library were bioactive and caused a wide spectrum of growth phenotypes such as aberrations in the growth of the hypocotyl, root, or cotyledon. The phenotype state was encoded into a vector of 26 features, hereafter called the phenotype fingerprint (PTFP). The PTFP enabled us to group bioactives with similar phenotypes. Bioactive compound structures were clustered based on atom pair similarity and core multiple common substructures (MCS) were used to partition the bioactives into clades A through M. Evidence is presented to compare the bioactivity trend of select clades of terminal acetylenes prior to derivitization with fluorescent amine azide building blocks. None of the terminal acetylenes clades examined in this section retained biological activity after derivitization into fluorescent probes which will be described in part II of this chapter.
+
+
+\section{Introduction}
+
+%Introduction to provide background and state objectives. \\
+This chapter elucidates how these bioactive compounds were identified. A primary, secondary, tiered chemical genetic screen was conducted with the clickable library and fluorescent libraries made from the clickable library for cell expansion and growth inhibitors. The format of the primary screen was a high throughput 96-well plate format in duplicate (Figure ~\ref{fig:TieredChemGen} Step 1). Compounds identified as bioactive growth inhibitors were re-synthesized in bulk and re-tested in the original format (Figure ~\ref{fig:TieredChemGen} Step 2.). Candidates were then re-synthesized for analytical HPLC and re-testing of the observed phenotype (Figure ~\ref{fig:TieredChemGen} Step 3). Reactions were prioritized based on product formation as evidenced by analytical HPLC and phenotype strength. Lead candidates were subjected to preparative fractionation using RP-HPLC, and bioactive fractions were sent for validation by ESI-MS (Figure ~\ref{fig:TieredChemGen} Step 4 and 5). Proton NMR was performed on bioactive classes that were the subject to full phenotype investigation (Figure ~\ref{fig:TieredChemGen} Step 5) and (Chapter 3: Phenotypes of Bioactives).  In the chemical genetic screen we examined the etiolated growth process in detail for the first seven days of growth and identified 119 bioactive compounds. A majority of which could not be categorized to phenotype classes, and several were fluorescent small molecules from the click reaction with dansyl building block A.
+
+\clearpage
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{TieredChemGen}
+\caption{A tiered chemical genetic screen was conducted with the clickable library and combinatorial libraries produced via click reactions with our amine azide building blocks using {\it Arabidopsis thaliana} as a bioactivity reporter. Numbered 1-5 above. 1. The primary chemical genetic screen involved testing {\it en masse} available probe sets in 96-well plates. 2. Bioactives identified in the primary screen were re-synthesized in the original microscale and biologically tested again in a 96-well format. 3. Candidates that produced novel or confusing phenotypes were re-synthesized again in a larger scale and validated for product formation with analytical reverse phase HPLC. 4. A select pool of reactions were re-synthesized and fractionated using preparative HPLC. 5. The fractionate was tested biologically with {\it Arabidopsis} and bioactive fractions were sent for structural validation using ESI-MS. Expected products were re-synthesized and purified for elucidation by 1HNMR. Bioactive candidates are discussed at length in Chapter 4: Phenotypes of Bioactives.}
+\label{fig:TieredChemGen}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.50]{GrowthandDevelopment}
+\caption{The life and development of etiolated {\it Arabidopsis} using the decimal code from 0 to 1 in the Biologische Bundesanstalt Bundessortenamt und CHemische Inustrie (BBCH) growth scale. The growth scale has the following descriptions. 0, time of setting down seed. 00, dry seed. 01, beginning of seed imbibition. 03, seed imbibition complete. 05, radicle emerged from seed. 07, hypocotyl with cotyledons breaking through seed coat. 09, emergence and cotyledon breaks through soil surface. 1. Cotyledons completely unfolded and growing point or true leaf initial visible.}
+\label{fig:GrowthandDevelopment}
+\end{figure}
+
+\subsection{Early growth and development of dark grown {\it Arabidopsis}}
+
+The growth of the dicotyledonous plant {\it Arabidopsis} follows a simple and distinct set of developmental milestones (Figure ~\ref{fig:GrowthandDevelopment}). When the seed absorbs water and is properly chilled at 4${}^\circ$ C for four days the seed will germinate (Figure ~\ref{fig:GrowthandDevelopment} stage 01). Hydrostatic pressure causes the radicle, or primordial root, to emerge from the seed coat (Figure ~\ref{fig:GrowthandDevelopment} stage 3-5). Hypocotyl elongation is exaggerated in the dark and will continue until exposed to light (Figure ~\ref{fig:GrowthandDevelopment} stage 6-9)\cite{lehman1996hookless1}. The hypocotyl elongation aids the escape from the seed husk while the cotyledon and apical hook retain a protective angle until permissive conditions arise, as will be detailed.
+
+\subsection{The apical meristem and the cotyledon angle}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CotyledonandAngleDemo}
+\caption{A schematic cotyledon of {\it Arabidopsis}. A. The cotyledon is pressed against itself, a consequence of embryonic development. B. The cotyledon opens and the angle phi shown increases. C. The cotyledon is fully open and above ground growth will continue from the apical meristem in this region. The numbers shown are BBCH developmental stage designations}
+\label{fig:CotyledonandAngleDemo}
+\end{figure}
+
+%find a way to relate this back to the PTFP matrix
+%do PTFP for merged.sdf
+
+The apical meristem, the future above ground body of the plant is a subpopulation of totipotential cells \cite{westhoff1998molecular}. This important population of cell is physically protected from damage during seedling emergence by a coordinated process between the cell adjacent to the cotyledon on the stem (Figure ~\ref{fig:CotyledonandAngleDemo}A-E). These cells grow at an uneven rate on the apical and basal side of the stem to preserve the apical hook. Exposure to light accompanied with soil emergence causes a loss of skotomorphogenesis or differential cellular growth and the apical hook \cite{guzman1990exploiting}. During this process the cotyledon is changing internal metabolism, enlarges, and emerges from the soil gravitropically and then peels back (Figure ~\ref{fig:CotyledonandAngleDemo}B-C) to begin the first true leaf development from stem cells in the apical meristem (Figure ~\ref{fig:CotyledonandAngleDemo}C) \cite{westhoff1998molecular}.
+
+\subsection{Anisotropic growth of hypocotyl cells in the dark}
+
+Growth of dicots in the dark is characterized by cell elongation in the direction opposite to gravity, and this response terminates in response to light. Etiolated anisotropic hypocotyl expansion is a phenotypic process limited by hydrostatic processes in elongation and expansion regulated by cell wall synthesis and developmental programs \cite{ishida2007twisted,lehman1996hookless1}. Etiolated growth facilitates emergence from the ground, and leads to an ideal spatial separation of the root and shoot with air, water and light gradients that dictate future organ differentiation in response to photosynthesis. It is our goal to discover compounds that perturb any or all of the processes of etiolated growth and intend to study these bioactives to determine the overall mechanism of action.
+
+\section{Materials and Methods}
+
+\subsection{Automated preparation of high throughput assay plates for chemical genetic screening}
+
+A biomek FXp Laboratory Automation Workstation was adapted to accurately and consistently dispense chemical, hot agar, and seed. All plates were inspected and visually and corrected by hand if necessary. Our automation procedure produced an aliquot error lower than expected from utilizing a mult-channel pipette.
+
+A high throughput chemical genetic screen was performed in 96-well format in duplicate in all cases. The clickable library was aliquotted from 10 mM master plates and stored at -20${}^\circ$ C when not in use. To test the clickable library 1 $\mu$L of chemical or DMSO was spotted into the 96-well plates and diluted with 99 $\mu$L of plate agar mix to a final concentration of 100 $\mu$M. The fluorescently taggaed library was screened similarly with 2 $\mu$l of unpurified reaction mixture, and to chelate copper from the click reaction EDTA was added to the growth media to a final concentration of 10 $\mu$M. {\it Arabidopsis} growth media was comprised of 0.67{\%} agar, 0.13{\%} Murashage and Skoog (Sigma-Aldrich), and ddH20. Assuming the click reactions proceeded to completion we estimated product concentration to be a maximum of 6.25 mM, thus the screening concentration was estimated up to 125 $\mu$M. Candidate hits from click reactions were re-synthesized and tested at a scale similar to the primary screen.
+
+\subsection{Preparation of {\it Arabidopsis} seeds and bioassay plates}
+
+Columbia-0 seeds, obtained from the National Arabidopsis Stock Center (NASC), were sterilized with 10{\%} bleach and 0.005 Triton X-100 (Fisher) for 15 minutes and washed with sterile ddH20 four times. Seed aliquots of 12 $\mu$L were suspended in 0.015{\%} agar and transferred to the top of growth media in the 96-well polystyrene plate (Greiner). On average 8-12 seeds were deposited per well, and was accomplished by suspending 17.73 mg of seed per 1 ml of suspension agar. Assay plates were subjected to vernalization at 4${}^\circ$ C for four days to promote uniform germination, and moved to a humid and dark growth chamber for four days. This was the standard growth protocol for all experiments involving analysis of etiolated growth. On the fourth day plates were scored manually and with a Leica MZ12.5 microscope for inhibition of growth due to chemical treatment compared to a 1{\%} DMSO control. Phenotypes pertaining to the hypocotyl, cotyledon, and root were scored, and hits that appeared in duplicate were considered candidates. 
+
+\clearpage
+\subsection{Clustering analysis using ChemmineR}
+
+\subsubsection{Clustering of bioactive terminal acetylenes using hclust}
+
+\begin{verbatim}
+R code:
+##################
+library(ChemmineR)
+##################
+#Clickable_ArabidopsisActives.sdf provided as a record
+
+#load, generate apset
+sdfset <- read.SDFset("Clickable_ArabidopsisActives.sdf")
+apset <- sdf2ap(sdfset)
+
+#create distance matrix to cluster apset
+dummy <- cmp.cluster(db=apset, cutoff=0, save.distances="distmat.rda")
+load("distmat.rda")
+
+#plot apset distance matrix as hierarchical cladogram
+hc <- hclust(as.dist(distmat), method="single")
+hc[["labels"]] <- cid(apset) 
+plot(as.dendrogram(hc), edgePar=list(col=4, lwd=2), horiz=F) 
+\end{verbatim}
+
+\subsubsection{Three dimensional multidimensional scaling (3D-MDS) plots}
+
+\begin{verbatim}
+R code:
+##################
+library(ChemmineR)
+##################
+sdfset_actives<-read.SDFset("Clickable_Arabidopsis_Actives.sdf")
+
+cid(sdfset_actives)<-datablocktag(sdfset_actives,tag="Click_ID")
+
+Actives<-cid(sdfset_actives)
+
+write.table(Actives, header=TRUE, quote=TRUE)
+##################
+load("Clickable_clusters.rda")
+
+load("Clickable_coord.rda")
+
+load("Clickable_sdfset.rda")
+##################
+cid(sdfset)<-datablocktag(sdfset,tag="Click_ID")
+
+rownames(coord) <-clusters$ids<-cid(sdfset)
+##################
+Actives<-read.table("Actives")
+
+rownames(Actives)<-Actives[,1]
+
+coord[rownames(coord)%in%rownames(Actives),]
+
+ActivesCoord<-coord[rownames(coord)%in%rownames(Actives),]
+
+InActivesCoord<-coord[!rownames(coord)%in%rownames(Actives),]
+############
+library(rgl)
+############
+coord_beta <-InActivesCoord
+rgl.open(); offset <- 50; par3d(windowRect=c(offset, offset, ...
+640+offset, 640+offset))
+rm(offset); rgl.clear(); rgl.viewpoint(theta=45, phi=30, fov=60, zoom=1)
+spheres3d(coord_beta[,1], coord_beta[,2], coord_beta[,3], radius=0.005, ...
+color="black", alpha=1, shininess=20); aspect3d(1, 1, 1)
+axes3d(col='black'); title3d("", "", "", "", "", col='black'); bg3d("white") 
+############
+rgl.snapshot("coord_beta.png")
+rgl.close()
+############
+coord_alpha <-ActivesCoord
+rgl.open(); offset <- 50; par3d(windowRect=c(offset, offset, ...
+640+offset, 640+offset))
+rm(offset); rgl.clear(); rgl.viewpoint(theta=45, phi=30, fov=60, zoom=1)
+spheres3d(coord_alpha[,1], coord_alpha[,2], coord_alpha[,3], radius=0.005, ...
+color="red", alpha=1, shininess=20); aspect3d(1, 1, 1)
+axes3d(col='black'); title3d("", "", "", "", "", col='black'); bg3d("white") 
+############
+rgl.snapshot("coord_alpha.png")
+rgl.close()
+############
+rgl.open(); offset <- 50; par3d(windowRect=c(offset, offset, ...
+640+offset, 640+offset))
+rm(offset); rgl.clear(); rgl.viewpoint(theta=45, phi=30, fov=60, zoom=1)
+spheres3d(coord_alpha[,1], coord_alpha[,2], coord_alpha[,3], radius=0.005, ...
+color="red", alpha=1, shininess=20); aspect3d(1, 1, 1)
+spheres3d(coord_beta[,1], coord_beta[,2], coord_beta[,3], radius=0.005, ...
+color="black", alpha=1, shininess=20); aspect3d(1, 1, 1)
+axes3d(col='black'); title3d("", "", "", "", "", col='black'); bg3d("white") 
+############
+rgl.snapshot("coord_alphaVsbeta.png")
+rgl.close()
+############
+\end{verbatim}
+
+\subsection{Multiple common substructure clustering using atom pair similarity via Tanimoto and hclust}
+
+\begin{verbatim}
+##################
+library(ChemmineR)
+library(fmcsR)
+##################
+files <- list.files(recursive=FALSE, pattern=".sdf")
+##################
+A <-c(2,3,2,2,2,2,3,1,1,3)
+B <-c(3,3,3,3,3,3,3,4,4,3)
+##################
+#CladeSelection <-c("B","C","D","E","Gi","Gii", "I", "Lii", "Li", "M", "N")
+CladeSelection <-c("CladeB.sdf","CladeC.sdf", "CladeD.sdf", "CladeE.sdf", ...
+"CladeGi.sdf", "CladeGii.sdf", "CladeI.sdf", "CladeLii.sdf", "CladeLi.sdf", ...
+"CladeM.sdf", "CladeN.sdf", "CladeO.sdf", "CladeP.sdf")
+##################  	  
+DoThis <- function(a){
+##################
+name <- gsub(".sdf", "", CladeSelection[a])
+png_name <- paste(name, "_hclust.png", sep="")
+png_name2 <- paste(name, "_SAR.png", sep="")
+table_name <- paste(name, "_SAR.txt", sep="")
+##################
+png(file=png_name, width=800, height=600, units="px")
+##################
+sdfset <- read.SDFset(CladeSelection[a])
+##################
+blockmatrix <-datablock2ma(datablocklist=datablock(sdfset))
+blockmatrix[,4]<-gsub("\\s__","",blockmatrix[,4])
+IDs<-blockmatrix[,4]
+blockmatrix[,4]<-gsub("CLK","",blockmatrix[,4])
+blockmatrix[,4]<-gsub("_","",blockmatrix[,4])
+datablock(sdfset)<-blockmatrix
+blockmatrix <-datablock2ma(datablocklist=datablock(sdfset))
+##################
+cid(sdfset)<-datablocktag(sdfset,tag="Click_ID")
+##################
+d <- sapply(cid(sdfset), function(x)
+fmcsBatch(sdfset[x], sdfset, au=0, bu=0,
+matching.mode="aromatic")[,"Overlap_Coefficient"])
+##################
+
+##################
+write.table(round(d*100), file=table_name, sep=" & ", quote=FALSE)
+##################
+hc <- hclust(as.dist(1-d), method="complete")
+hc[["labels"]] <- cid(sdfset)
+plot(as.dendrogram(hc), edgePar=list(col=4, lwd=2), horiz=TRUE, main=name)
+dev.off()
+##################
+printZ<-LETTERS[1:length(A)]
+printZ <- paste(printZ, ". CLK", cid(sdfset), sep="")
+##################
+png(file=png_name2, width=1024, height=768, units = "px")
+plot(sdfset, griddim=c(A[a],B[a]), print_cid=printZ)
+dev.off()
+}
+##################
+a <- 1:length(CladeSelection)
+##################
+lapply(a, DoThis)
+##################
+\end{verbatim}
+
+%\clearpage
+
+%for clade highlight do tanimoto and subset to desired.
+
+%find way to write up clade analysis
+%phenotype assignment process
+
+%phenotype annotation guidelines table
+
+
+\subsection{Phenotype fingerprint (PTFP) annotation guidelines}
+
+Previous work has been done to formalize the collection and annotation of diverse phenotypes into discrete binary bins \cite{chow2007latca}. These phenotype bins are shown below (Table \ref{table:PhenotypeAnnotationGuidelines}). Most of the procedures require only the naked eye and have been designated "eyeball". The matrix resulting from the scoring of phenotype bins in our scheme were used to prioritize candidate leads, and interpret structure activity relationships. Therefore, I will detail how the determination is made to score the presence or absence of a phenotype during the scoring procedure. 
+
+\subsubsection{Apical hook}
+
+An apical hook in this sense is more like an apical corkscrew. The control apical hook shown here (Figure~\ref{fig:Control_1_0mag}) is not considered an "apical hook". 
+
+\subsubsection{Apical collar}
+
+If a radial constriction appears at the interface between the hypocotyl and the cotyledon it is considered an apical collar. 
+
+\subsubsection{Apical meristem protrusion}
+
+A protrusion from the center of the open cotyledon or shoot apical meristem. 
+
+\subsubsection{Hookless}
+
+This term was inhereted from Ecker, and has some subtlety. If the cotyledon was 90 degrees or more with respect to the hypocotyl it is considered "hookless", as observed in ethylene mutants. %\cite
+
+\subsubsection{Open-T cotyledon}
+
+If the cotyledon is of a V-shape and is open beyond 45 degrees it is considered a T-cotyledon.
+
+\subsubsection{Open-V cotyledon}
+
+A cotyledon can be considered an "open-v" under circumstances when the cotyledon does not point up. If the shape of the open cotyledon is shaped like the letter "v" it qualifies for inclusion into this phenotype bin.
+
+\subsubsection{Open scissor cotyledon}
+A cotyledon is considered to by an "open scissor" if the cotyledon is open and if the two leaves are scissored against each other before opening. Contrast the scissor cotyledon with the V-cotyledon, where the leaves are in the same plane. The cotyledon is considered a scissor even if the angle between the center of each leaves is small. If the leaves of the cotyledon are pressed together this is not considered "open scissor". Cotyledons pointing down that satisfy these characteristics qualify for a hit in this phenotype bin.
+
+\subsubsection{Bleached cotyledon}
+
+Etiolated or dark-grown seedlings have inactive chlorophyll and are subsequently yellow prior to exposure to light. "Bleached cotyledons" do not green along the typical time course, and are delayed in respect to photosynthetic greening.
+
+\subsubsectoin{Stained cotyledon}
+
+A cotyledon may exhibit spots or characteristic stains in small domains on the cotyledon.
+
+\subsubsection{Left handed twisted hypocotyl}
+
+The orientation of the elongated cells of the hypocotyl recapitulate a left handed twist, as if one held up their left hand with thumb pointing up to the sky and fingers curling inward to the palm to reprsent the twisting axis. %\cite{Hashimoto..}
+
+\subsubsection{Right handed twisted hypocotyl}
+
+The orentation of the elongated cells of the hypocotyl recapitulate a right handed twist. %\cite{ZhaoChub}
+
+\subsubsection{Swollen hypocotyl}
+
+A hypocotyl is considered swollen if the diameter relative to the seedling size is larger than expected. Even slightly swollen hypocotyls were considered for this class.
+
+\subsubsection{Curly hypocotyl}
+
+A hypocotyl is considered curly if the hypocotyl curls onto itself of if the whole seedling makes a shape characteristic of the letter "C" or "S". This annotation is applied to seedlings of large and small size equally. This may be problematic as a long seedling may be more accurately considered curly whereas a short seedling may be described as curved, but would be expected to curl if of larger size. Lastly, if a hypocotyl has a considerable spiral this can be considered curly.
+
+\subsubsection{Bulging hypocotyl cells}
+
+If the hypocotyl cells are discernible bulging or diverging from the typical columnar shape the cell is considered bulging.
+
+\subsubsection{Distorted cell alignment}
+
+Cells in any tissue may exhibit distorted alignment. Often hypocotyl cells are long, and have a distinct and parallel, end-to-end alignment. Deviations from this pattern are considered "disordered cell alignment".
+
+\subsubsection{Stained hypocotyl}
+
+A hypocotyl may exhibit a reproducible stain in any part of the stem.
+
+\subsubsection{Root promotion}
+
+If the root is larger than would be expected for the relative seedling size this phenotype is indicated. Especially if the hypocotyl is small but the root is half or more the size of the hypocotyl. 
+
+\subsubsection{Swollen root}
+
+The root must be a minimum size to be considered for the "swollen root" phenotype bin. For example, the compounds auxin and isoxaben create very short roots that are undeveloped, but swollen. These are not considered.
+
+\subsubsection{Stained root}
+
+Any reproducible root stains are considered.
+
+\subsubsection{Germination inhibition}
+
+Seeds that do not germinated or are arrested in the germination process are scored for inclusion in this phenotype bin.
+
+\subsubsection{Radical}
+
+A seedling is considered a radical if it is barely germinating and the radical is protruding from the seed coat.
+
+\subsubsection{20-80{\%} hypocotyl inhibition}
+
+Assignment of phenotype based on hypocoty inhibition value compared to control seedlings with the DMSO vehicle at 1{\%}.
+
+\subsubsection{Root inhibition}
+
+Root size is judged relative to seedling size, rather than hypocotyl length which is considered with respect to the control seedling.
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Phenotype Bin                  & Short Details                    & Procedure & Value \\ \hline
+    apical hook                    & ~                                & eyeball   & 1      \\ \hline
+    apical collar                  & ~                                & eyeball   & 1      \\ \hline
+    apical meristem protrusion     & apical meristem early growth     & eyeball   & 1      \\ \hline
+    hookless                       & no hook, straight up and down    & eyeball   & 1      \\ \hline
+    open T-cotyledon               & T                                & eyeball   & 0.5    \\ \hline
+    open V-cotyledon               & V                                & eyeball   &  0.5   \\ \hline
+    open scissor cotyledon         & \textgreater ~ or \textless           & eyeball   & 0.5    \\ \hline
+    bleached cotyledon             & ~                                & eyeball   & 0.2    \\ \hline
+    stained cotyledon              & ~                                & eyeball   & 0.2    \\ \hline
+    left handed twisted hypocotyl  & LH twist                         & eyeball   & 0.5    \\ \hline
+    right handed twisted hypocotyl & RH twist                         & eyeball   & 0.5    \\ \hline
+    swollen hypocotyl              & swollen hypocotyl                & eyeball   & 0.8    \\ \hline
+    curly hypocotyl                & spiral                           & eyeball   & 1      \\ \hline
+    bulging hypocotyl cell         & swollen hypocotyl cells          & eyeball   & 1      \\ \hline
+    distorted cell alignment       & alignment of cells is disordered & eyeball   & 0.8    \\ \hline
+    stained hypocotyl              & dye localized in domains         & eyeball & 0.2 \\ \hline
+    root promotion                 & root longer than control         & eyeball & 0.5 \\ \hline
+    swollen root                   & root is swollen                  & eyeball & 0.8 \\ \hline
+    stained root                   & dye localized in domains         & eyeball  & 0.8 \\ \hline
+    germination inhibition         & germination inhibtion            & eyeball & 0.5 \\ \hline
+    radical                        & radical protrusion               & eyeball & 0.5 \\ \hline
+    20-50{\%} hypocotyl inhibition & 80-50{\%} control                & imagej  & 0.8 \\ \hline
+    51-80{\%} hypocotyl inhibition & 49-20{\%} control                & imagej  & 0.2 \\ \hline
+    \textgreater 80{\%} hypocotyl inhibition & \textless 20{\%} control                 & imagej  & 1 \\ \hline
+    \textgreater 80{\%} root inhibition      & \textless 20{\%} control                 & imagej  & 1 \\ \hline
+   \end{tabular}
+    \caption {Phenotype annotation guidelines used to assign scores of one or zero for each phenotype annotation bin. The weight shown was used as a parameter for the clustering of the phenotype fingerprint (PTFP) matrix of all bioactive terminal acetylenes in the clickable library. }
+    \label{table:PhenotypeAnnotationGuidelines}
+\end{table}
+
+\clearpage
+
+\section{Results}
+
+\subsection{Primary Chemical Genetic Screen}
+
+\begin{figure}
+\includegraphics[scale=0.50]{ArabidopsisPrimaryScreen}
+\caption{{\it Arabidopsis thaliana} primary chemical genetic screen performed in a 96-well assay. A-B. Chemical is transferred to empty plates diluted with growth media in agar and seed are added to the top of the hardened surface. C-F. Seeds are chilled in the refrigerator on assay plates for four days and placed in a dark growth chamber for three days prior to inspection by eye or microscope.}
+\label{fig:ArabidopsisPrimaryScreen}
+\end{figure}
+
+The {\it Arabidopsis} chemical genetic screen was conducted by transferring a small volume of compound library in duplicate to assay plates with growth media and seed to a concentration up to 100 $\mu$M (Figure~\ref{fig:ArabidopsisPrimaryScreen} A and B). This procedure can be performed by hand using a multichannel pipette, but was automated by using a custom Biomek FXp workstation with an AP-96 multichannel head. The assay plates were stratified, chilled, for four days to promote even germination (Figure~\ref{fig:ArabidopsisPrimaryScreen}C) and grown in a humid and dark growth chamber for three days to observe etiolated growth (Figure~\ref{fig:ArabidopsisPrimaryScreen}D). Visual inspection of assay plates at multiple angles was performed to isolate seedlings did not grow to approximately 80{\%} of the well height (Figure~\ref{fig:ArabidopsisPrimaryScreen}E)\cite{Zhao_Hyr1}. The visual scoring procedure accelerated prioritization of wells for microscope investigation (Figure~\ref{fig:ArabidopsisPrimaryScreen}E and F). The process of photomorphogenesis or light response is known to occur in less than thirty minutes, and can reverse dark grown phenotypes. For this reason assay plates were not exposed to light prior to examination. The process of dark growth or skotomorphogenesis will be discussed in the following chapter (Chapter 4: Phenotypes of bioactives).
+
+\subsection{Diversity analysis of bioactive terminal acetylenes}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.28]{Clickable_Actives_label}
+\caption{Three dimensional multidimensional scaling (3D-MDS) plots showing the chemical diversity of bioactives in the clickable collection. A. Plot showing the chemical space of the inactive compounds in the clickable collection as black dots. B. Plot showing active compounds in the clickable collection as red dots. C. Both active and inactive compounds shown as an overlay in the same chemical space.}
+\label{fig:2D_MDS_AA}
+\end{figure}
+%\clearpage
+
+The SDFset of bioactive terminal acetylenes was used to generate an atom pair descriptor set (APset). The Tanimoto metric was chosen to evaluate atom pair similarity and embed compounds into a 3-dimensional distance matrix which is the product of a multidimensional scaling operation hereafter 3D-MDS \cite{cao2008chemminer}. Tanimoto values were computed by matching the connectivity matrix of two compounds. A Tanimoto value of 1.0 indicated a one-to-one match for all bonds if the cutoff is set to 1.0 or 100 {\%} match.
+
+
+\begin{figure}
+\includegraphics[scale=0.55]{CladeSAR}
+\caption{A panel of the core multiple common substructures (MCS) identified in bioactive acetylenes in the clickable library. A-M. MCS of the clades discussed in the text. Clades A-M.}
+\label{fig:CladeSAR}
+\end{figure}
+
+\clearpage
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CACCA_Arabidopsis_Actives_hclust}
+\caption{Cladogram showing the distance between all {\it Arabidopsis} active compounds in the clickable collection, distances were derived through the Tanimoto atom pair similarity metric in the R package fmcsR. Compound IDs are visible by zooming into the cladogram.}
+\label{fig:CACCA_Arabidopsis_Actives_hclust}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.50]{DMSO_1_0_mag}
+\caption{Representative control {\it Arabidopsis thaliana} Columbia-0 seedling grown in the dark and photographed on the seventh day. Seedling is shown at 1.0 magnification grown on 1{\%} dimethylsulfoxide (DMSO) as solvent vehicle control. Scale bar indicates 2 mm.}
+\label{fig:Control_1_0mag}
+\end{figure}
+
+The primary chemical screen determined the clickable collection contained a total of one hundred nineteen bioactive compounds (Figure~\ref{fig:2D_MDS_AA}). A quick glance shows that bioactives were loosely spread across the chemical library (Figure~\ref{fig:2D_MDS_AA}A and B). To compare the results of bioactives that clustered closely in chemical space we subset the bioactives based on shared multiple common substructures (MCS) (Figure~\ref{fig:CladeSAR}). We explored bioactivity trends among these clades of acetylene compounds by re-testing at a 25 $\mu$M concentration in a 24-well format. Seedlings were transferred to a hard agar surface and photographed using a dissecting microscope mounted with a digital camera. Typical control seedlings exhibited elongated hypocotyls and long roots with a preserved apical hook and closed cotyledons (Figure~\ref{fig:Control_1_0mag}). These are the features of an etiolated seedling, and will be discussed in more detail in the next chapter (Phenotypes of Bioactives). Use the phenotype key to look up the phenotype classification for bioactive compounds shown in the next figures (Table \ref{table:PhenotypeAnnotationKey}).
+
+%\clearpage
+\begin{table}\centering
+    \begin{tabular}{|l|l|l|}
+    \hline
+      & Category & Ref          \\ \hline
+    K & curly &                 \\ \hline
+    C & cytokinin-like  & \cite{vogel1998isolation} \\ \hline
+    A & auxin-like & \cite{zhao2003sir1}      \\ \hline
+    I & isoxaben-like & \cite{debolt2007morlin}    \\ \hline
+    H & hookless  & \cite{guzman1990exploiting}        \\ \hline
+    G & gibberellin &            \\ \hline
+    R & short root &            \\ \hline
+    D & radical protrusion &    \\ \hline
+    M & germination disturbance & \\ \hline
+    T & twisted hypocotyl &     \\ \hline
+    Y & hypocotyl inhibition &  \\ \hline
+    S & stained-root &          \\ \hline
+    O & oryzalin-like & \cite{nakamura2004low}   \\ \hline
+    \end{tabular}
+    \caption {Phenotype key for assigned phenotype categories of bioactives from the clickable collection. The short letter is used in following figures to designate assignment to a phenotype group. K, denotes curly hypocotyl or roots. C, denotes phenotypes recapitulated by cytokinin. A, denotes short stubby roots, apical collars, and swollen short hypocotyls. I, denotes phenotype appearance similar to cellulose synthase inhibitor isoxaben. H, denotes a missing apical hook that is typical for etiolated seedlings. G, denotes phenotypes similar to treatment with gibberellin. R, denotes roots shorter than control. D, denotes the emergence of the radical or primordial root from the seed. M, denotes any disturbance that prevented the seed from germinating. T, denotes hypocotyls that have a twisted cell file. Y, denotes shorter than control hypocotyls. S, denotes roots exhibit a conspicuous collection of compound creating stained puncta. O, denotes hypocotyl and root features associated with the microtubule disruptor oryzalin.}
+    \label{table:PhenotypeAnnotationKey}
+\end{table}
+\clearpage
+
+
+\subsection{Clade overview of bioactive terminal acetylenes}
+
+\subsubsection{Clade B compounds}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeB_SAR}
+\caption{Clade B compounds with bioactivity annotation.}
+\label{fig:CladeB_SAR}
+\end{figure}
+
+%%%%%%%%%%%%Tanimoto score tables
+\begin{table}\centering
+    \begin{tabular}{|l|l|}
+    \hline
+  # & ID \\ \hline
+  2. & CLK022G05  \\ \hline
+1. & CLK027C10  \\ \hline
+6. & CLK022F05  \\ \hline
+4. & CLK022G06  \\ \hline
+3. & CLK022C08  \\ \hline
+5. & CLK022B09  \\ \hline
+    \end{tabular}
+    \caption {Table showing the  index and ID of clade B compounds shown in the next heatmap.} 
+    \label{table:CladeB_fmcsVals}
+\end{table}
+
+
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeB_fmcs}
+\caption{Heat map showing the distance between clade B compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeB_fmcs}
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.15]{CladeB_MDS}
+\caption{Phenotypes of clade B compounds in the clickable collection. A. CLK022G06. B. CLK022F05. C. CLK022B09. D. CLK022C08. All images at the same scale with a scale bar shown indicating 1$\mu$m.}
+\label{fig:CladeB_MDS}
+\end{figure}
+
+
+Clade B compounds (Figure~\ref{fig:CladeB_SAR}), contain a 4-(prop-2-yn-1-yloxy) benzamide core (Table \ref{table:CladeB_fmcsVals}). The table (Table \ref{table:CladeB_fmcsVals}) and following table have been sorted to match the heatmap, and the order of cladograms produced by executing hclust on the distances of compounds in the respective clade (described in methods). The heatmap indicates the score of percentage simlarity when executing a search with a cutoff of 70{\%}(Figure~\ref{fig:CladeB_fmcs}).
+
+The compound CLK022G06 can be observed with a curly hypocotyl phenotype (Table \ref{table:PhenotypeAnnotationKey}) -(Figure~\ref{fig:CladeB_MDS}) when observed with nearest neighbors in the clade with scores of 90-91{\%}(Figure~\ref{fig:CladeB_fmcs}). 
+
+\subsubsection{Clade C compounds}
+
+%Fix 11C06 auxin annotation in image
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeC_SAR}
+\caption{Clade C with bioactivity information. A-G.}
+\label{fig:CladeC_SAR}
+\end{figure}
+
+
+%clade C table
+
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|}
+    \hline
+   # & ID \\ \hline 
+ 2. & CLK011C06 \\ \hline
+1. & CLK020H07 \\ \hline
+5. & CLK013A04  \\ \hline
+4. & CLK013D04  \\ \hline
+6. & CLK025G04  \\ \hline
+3. & CLK020H11  \\ \hline
+7. & CLK018C03  \\ \hline
+    \end{tabular}
+    \caption {Table showing the  index and ID of clade C compounds shown in the next heatmap.}   
+    \label{table:CladeC_fmcsVals}
+\end{table}
+
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeC_fmcs}
+\caption{Heat map showing the distance between clade C compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeC_fmcs}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.15]{CladeC_MDS}
+\caption{Phenotypes of clade C compounds in the clickable collection. A. CLK011C06. B. CLK013D04. C. CLK013A04. D. CLK018C03. E. CLK020H11. All images at the same scale with a scale bar shown indicating 1$\mu$m.}
+\label{fig:CladeC_MDS}
+\end{figure}
+
+
+Clade C compounds (Figure~\ref{fig:CladeC_SAR}), 3-ethynylphenyl acetamide class (Table \ref{table:CladeC_fmcsVals}), causes the formation of apical collars reminiscent of the auxin phenotype (Figure~\ref{fig:CladeC_MDS}A). The compounds CLK020H07 (not shown) and CLK011C06 (Figure~\ref{fig:CladeC_MDS}A) both contain electronegative substituents which may be responsible to cause auxin-like phenotypes. The compound CLK13A04 is 60{\%} similar to CLK020H07 and CLK011C06, and had root problems not shown. The root inhibtion caused by CLK013A04, not shown, may or may not be related to phenotypes seen in this clade. It was not determined.
+
+\clearpage
+
+%Query of LATCA found blah similar compounds but none were auxins
+%Query of LATCA identifies the aryl nitro group as a likely cause of an auxin phenotype.
+%Query of LATCA identifies blah similar compounds with apical hook defects
+
+\subsubsection{Clade E compounds}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeE_SAR}
+\caption{Clade E compounds with bioactivity annotation.}
+\label{fig:CladeE_SAR}
+\end{figure}
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|}
+    \hline
+  & ID \\ \hline 
+2. & CLK021D08  \\ \hline
+1. & CLK021F09  \\ \hline
+4. & CLK021C09  \\ \hline
+5. & CLK021D07  \\ \hline
+3. & CLK021H07  \\ \hline
+    \end{tabular}
+    \caption {Table showing the  index and ID of clade E compounds shown in the next heatmap.}   
+      \label{table:CladeE_fmcsVals}
+\end{table}
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeE_fmcs}
+\caption{Heat map showing the distance between clade E compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeE_fmcs}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.20]{CladeE_MDS}
+\caption{Phenotypes of clade E compounds in the clickable collection. A. CLK021D08. B. CLK021F09. C. CLK021H07. D. CLK021C09. All images at the same scale with a scale bar shown indicating 1$\mu$m.}
+\label{fig:CladeE_MDS}
+\end{figure}
+
+Clade E compounds (Figure~\ref{fig:CladeE_SAR} and (Table \ref{table:CladeC_fmcsVals}) are the most potent to cause severe apical hook problems (Figure~\ref{fig:CladeE_MDS}A-D). These compounds were not considered further.
+
+
+\subsubsection{Clade I compounds}
+
+%\begin{figure}
+%\includegraphics[scale=0.50]{CladeI_SAR}
+%\caption{Clade I compounds with bioactivity annotation.}
+%\label{fig:CladeI_SAR}
+%\end{figure}
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}
+    \hline
+   & ID \\ \hline 
+2. & CLK029D05  \\ \hline
+1. & CLK029F06  \\ \hline
+3. & CLK029G05  \\ \hline
+5. & CLK029D06  \\ \hline
+4. & CLK029E05  \\ \hline
+7. & CLK029B05  \\ \hline
+6. & CLK029C05  \\ \hline
+    \end{tabular}
+    \caption {Table showing the Tanimoto similarity coefficients for clade I compounds. The similarity between compound pairs is shown with compound identifier (CLK ID) and value as percent. The matrix has been sorted to match the compound ID order of the matching cladogram on this page.}     
+     \label{table:CladeI_fmcsVals}
+\end{table}
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeI_fmcs}
+\caption{Heat map showing the distance between clade I compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeI_fmcs}
+\end{figure}
+
+
+\begin{figure}\centering
+\includegraphics[scale=0.15]{CladeI_MDS}
+\caption{Phenotypes of clade I compounds in the clickable collection. A. CLK029D06. B. CLK029C05. C.CLK029G05. D. CLK029B05. All images at the same scale with a scale bar shown indicating 2$\mu$m.}
+\label{fig:CladeI_MDS}
+\end{figure}
+
+Clade I compounds (Figure~\ref{fig:CladeI_MDS}) stain the hypocotyl and root in distinct domains and cause swelling reminiscent of the isoxaben phenotype (Figure~\ref{fig:CladeI_MDS}). Close neighbors (Figure~\ref{fig:CladeI_MDS}A and B) with a score of 92{\%} similarity cause severe phenotypes. The neighbors  (Figure~\ref{fig:CladeI_MDS}A, C, and D) all score 96{\%} similar (Table \ref{table:CladeI_fmcsVals}) and have a phenotype where portions of the hypocotyl and or root have localized stains.
+
+\clearpage
+
+\subsubsection{Clade L compounds}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeLii_SAR}
+\caption{Clade Lii compounds with bioactivity annotation.}
+\label{fig:CladeLii_SAR}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeLi_SAR}
+\caption{Clade Li compounds with bioactivity annotation.}
+\label{fig:CladeLi_SAR}
+\end{figure}
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|}
+    \hline
+    & ID \\ \hline
+4. & CLK001D05  \\ \hline
+3. & CLK017E03  \\ \hline
+7. & CLK005H02  \\ \hline
+2. & CLK029A05  \\ \hline
+6. & CLK017A03  \\ \hline
+5. & CLK017A04  \\ \hline
+8. & CLK006G02  \\ \hline
+1. & CLK017F02  \\ \hline
+    \end{tabular}
+    \caption {Table showing the Tanimoto similarity coefficients for clade L compounds. The similarity between compound pairs is shown with compound identifier (CLK ID) and value as percent. The matrix has been sorted to match the compound ID order of the matching cladogram on the next page.}     
+     \label{table:CladeL_fmcsVals}
+\end{table}
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeL_fmcs}
+\caption{Heat map showing the distance between clade L compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeL_fmcs}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.20]{CladeL_MDS}
+\caption{Phenotypes of clade L compounds in the clickable collection. A. CLK017F02. B. CLK006G02. C. CLK017A03. D. CLK017A04. All images at the same scale with a scale bar shown indicating 1$\mu$m.}
+\label{fig:CladeL_MDS}
+\end{figure}
+
+
+Clade L compounds (Figure~\ref{fig:CladeLii_SAR})-(Figure~\ref{fig:CladeLi_SAR}) and (Table \ref{table:CladeI_fmcsVals}) also cause exaggerated apical hooks (Figure~\ref{fig:CladeL_MDS}) despite having different core structures. The compound CLK017F02 is inactive and the compound CLK006G02 is 47{\%} similar and causes an exaggerated apical hook (Figure~\ref{fig:CladeL_MDS}A and B). Nearest neighbors to CLK006G02 with lower scores of 44 and 40{\%} caused similar apical hook defects (Figure~\ref{fig:CladeL_MDS}C and D)(Table \ref{table:CladeI_fmcsVals}). This group was not considered further.
+
+\subsubsection{Clade M compounds}
+
+\begin{figure}
+\includegraphics[scale=0.50]{CladeM_SAR}
+\caption{Clade M compounds with bioactivity annotation.}
+\label{fig:CladeM_SAR}
+\end{figure}
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|}
+    \hline
+ & ID \\ \hline  
+2. & CLK002D05  \\ \hline
+1. & CLK003D03  \\ \hline
+3. & CLK002D03  \\ \hline
+6. & CLK001G08  \\ \hline
+5. & CLK002B07  \\ \hline
+8. & CLK001E05  \\ \hline
+4. & CLK002C03  \\ \hline
+7. & CLK001F05  \\ \hline
+9. & CLK002F05  \\ \hline
+    \end{tabular}
+    \caption {Table showing the Tanimoto similarity coefficients for clade M compounds. The similarity between compound pairs is shown with compound identifier (CLK ID) and value as percent. The matrix has been sorted to match the compound ID order of the matching cladogram on the next page.}  
+     \label{table:CladeM_fmcsVals}
+\end{table}
+
+
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{CladeM_fmcs}
+\caption{Heat map showing the distance between clade M compounds in the clickable collection, distances were derived from the Tanimoto atom pair similarity metric in the R package fmcsR. Values shown are the Tanimoto value *100, with a score of 100 indicating 70 {\%} similarity.}
+\label{fig:CladeM_fmcs}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.20]{CladeM_GermPanel}
+\caption{Germination effects of Clade M germination inhibitors. A. CLK003D03 B. CLK002B07 C. CLK001G08. D. CLK001F05 E. CLK002D03 F. CLK002C03 . All images at the same scale with a scale bar shown indicating 2$\mu$m.}
+\label{fig:CladeM_GermPanel}
+\end{figure}
+
+The last clade in this analysis clade M (Figure~\ref{fig:CladeM_SAR})(Figure~\ref{fig:CladeM_fmcs}) causes severe germination inhibition (Figure~\ref{fig:CladeM_GermPanel}). The core MCS of this clade (Table \ref{table:CladeM_fmcsVals}) has been identified in the literature in relation to {\it Arabdiospsis} growth and germination and is discussed in Chapter 4. 
+
+
+\subsection{Phenotype Fingerprint approach for phenotype annotation of the clickable library}
+
+
+\subsubsection{The phenotype fingerprint approach to library annotation}
+
+The library was annotated using a phenotype bin approach inspired by the Masters thesis of Freeman Chow \cite{chow2007latca} since a number of clustering techniques can be performed on the resultant binary matrix. In addition, our data may be appended to a larger matrix downstream as information becomes available. Images were analyzed manually to annotate each compound with a binary score for 26 phenotype bins (Figure~\ref{fig:PTFP1}) (Table \ref{table:PhenotypeAnnotationGuidelines}). The resulting 26 character phenotype score, hereafter called the PhenoType FingerPrint (PTFP), was used to perform hierarchical clustering based on a weighted category scheme (Figure~\ref{fig:PTFP1}). As expected, the PTFP approach successfully grouped phenotypically similar compounds, such as members of clade M, shown as a zoom of the total cladogram (Figure~\ref{fig:PTFP1}B).
+
+\begin{figure}
+\includegraphics[scale=0.50]{PTFP1}
+\caption{A complete cladogram of phenotype fingerprint (PTFP) vectors collected for bioactive acetylenes. B. The inset cyan box with a single astrisk indicates three of the clade M germination inhibitors (CLK002C03, CLK002D03, CLK002D05), shown here all displaying root problems and greater than 80{\%} hypocotyl inhibition shown with red color. The double astrisks indicate a block of compounds that cause swelling and disordered cells, shown in the next figure.}
+\label{fig:PTFP1}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.50]{PTFP2}
+\caption{A block of compounds with similar PTFPs causing swelling and disordered cells. B-C. CLK026D11 and CLK026H11 cause extreme swelling phenotype at low doses. D-E. Swelling phenotype for CLK026D11 and CLK026H11, both Clade O members, respectively shown at identical magnification to previous clade M photos.}
+\label{fig:PTFP2}
+\end{figure}
+
+\subsubsection{PTFP identifies a block of compounds potent to cause bulging and disordered cells and lead to severe inhibition of hypocotyl and root development}
+
+PTFP identifies a block of compounds potent to cause bulging and disordered cells and lead to severe inhibition of hypocotyl and root development (Figure~\ref{fig:PTFP2}A compared to D and E). Two interesting compounds in this block, CLK026D11 and CLK026H11 were camphor-like compounds possessing iodoacetylenes (Figure~\ref{fig:PTFP2}B-C). These compounds were serendipitously included into our library because the connection matrix of the iodoacetylene was similar enough to a terminal acetylene for inclusion.
+
+\subsubsection{Phenotype spectrum of bioactives in the clickable library}
+
+\begin{figure}\centering
+\includegraphics[scale=0.50]{BioactiveSpectrum}
+\caption{A grouping of classes of bioactive terminal acetylenes found in the clickable library. Data is based on the PTFP, comments on primary chemical screening data, and comparison of phenotypes and compounds to the literature. Values shown are percent per category for total number of bioactives. The largest category is uncategorized hits.}
+\label{fig:BioactiveSpectrum}
+\end{figure}
+
+A large number of compounds produced auxin or auxin-like phenotypes such as the apical collar with swollen and short hypocotyl and a very short root (Figure~\ref{fig:BioactiveSpectrum}), (shown as a frequency distribution). The prevalence of a spectrum of auxin, cytokinin, and isoxaben-like phenotypes is evidence that our library of terminal acetylene small molecules was suffciently diverse and bio-orthogonal in the sense that the terminal acetylene alone did not appear to cause a phenotype bias. 
+
+%None of the clades shown retained bioactivity after conjugation with fluorescent amine azide building blocks. Efforts to identify bioactive fluorscently labelled probes will be detailed in the next part of this chapter.
+
+
+\part{}
+
+\section{Abstract}
+
+We proposed to discover small molecule compounds that were both fluorescent and tagged for biochemical follow up. Therefore, we were uncertain which leads would serve as best candidates for fluorescent probes and would retain bioactivity after derivitization with an alkyl diazirine for covalent labeling. A systematic approach was taken to test the amine azide building block and a panel of eight fluorophores with the clickable library, thus producing 32,016 reactions. After screening, the whole set or reactions positive candidates were prioritized for specific investigation paradigms (Chapter 4: Phenotypes of Bioactives).
+
+\section{Materials and Methods}
+
+\subsection{Validation of click products using analytical RP-HPLC}
+
+RP-HPLC using an Agilent Technologies 1200 Series HPLC with a Zorbax RX-C8 5$\mu$m column using a gradient elution from 5{\%} to 95{\%} acetonitrile containing 0.05{\%} formic acid. Prior to injection analyte was dissolved in either 99$\mu$L of 40{\%} acetonitrile or methanol. When precipitation was observed the sample was sonicated. The retention of the parent acetylene, residual dye-azide, and new peaks was used to determine product formation and if possible reaction efficiency.
+
+
+\subsection{Validation of click products using preparative RP-HPLC}
+
+Preparative HPLC fractionation was performed in duplicate on re-synthesized compounds using aqueous solvents of 5{\%} methanol and 95{\%} methanol. For injection 15$\mu$L of reaction was placed into 85$\mu$L of methanol and injected. Fractionate was collected into 48 wells of a 96-well plate, split into two sets. One set was stored directly stored at -20${}^\circ$ C for mass spectrometry validation. The other set was dried {\it in vacuo} using a Labcono centrifugal evaporator at 35-40${}^\circ$ C for several hours and dissolved in 2$\mu$L of DMSO and growth media was then added to the well along with seed, as previous. 
+
+\subsection{Validation of bioactive fractions by ESI-MS}
+
+ESI-MS was provided by University of California Department of Chemistry open access mass spectrometry services using an Agilent ESI-TOF-MS.
+
+\subsection{Dose curve of TBTA variants}
+
+A dose curve was performed with 1,5, 15, 25, 50, 75, 100 $\mu$M doses using TBTA-(CO2Me)3, TBTA-(CO2H)3, and TBTA-(CO2Na)3 on {\it Arabidopsis} grown in single well plates (NUNC) grown vertically. Measurements and photographic procedures are detailed in Materials and Methods of Chapter 4: Phenotypes of bioactives.
+
+%\clearpage
+
+\section{Results}
+
+\subsection{Bivariate graphs of hypocotyl and root growth values using the bagplot}
+
+Previously we highlighted the features of individual plants displaying phenotypes by photography. It is evident the specifics of each phenotype has an influence on hypocotyl and root length at the very least. Observe these values shown in a simple scatter plot of DMSO treated seedlings from three replicate plates (Figure~\ref{fig:TBTADoseCurve}A). Even if we have no {\it a priori} knowledge of the cause of a phenotype we can observe the overt characteristics through bi-variate analysis. A multi-variable analysis would offer a finer description of each phenotype but was too costly. Therefore, we chose to evaluate quantitative measurements of hypocotyl and root growth to determine the bioactivity of several compounds on whole plates of {\it Arabidopsis} plants. Hereafter, the bi-variate graphs are visualized using a plotting technique called the bagplot \cite{rousseeuw1999bagplot}.
+
+\begin{figure}
+\includegraphics[scale=0.78]{TBTADoseCurve2}
+\caption{Bivariate analysis of hypocotyl and root values of {\it Arabidopsis}. A. Scatterplot of hypocotyl and root values for DMSO treated seedlings (data from three replicates). B. The same three replicates partitioned to transparent layers of a bagplot with darker color indicating the baghull or region of 95{\%} confidence. C. Replicate values merged into the same bagplot showing outliers in red and a modified baghull as a result of the averaging. D. Baghull demonstrating bioactivity differences between TBTA-(CO2H)3 (shown in violet) versus TBTA-(CO2Na)3.}
+\label{fig:TBTADoseCurve}
+\end{figure}
+
+Visualization of values in the bagplot are shown for three replicate plates treated with DMSO (Figure~\ref{fig:TBTADoseCurve}B). Three transparent layers have been used to partition values to the replicate data set. The darker blue circle called a baghull indicates values in accordance with a 95{\%} confidence interval. The red asterisk in the center of the baghull indicates the mean value for both variables of hypocotyl and root. Outliers from the dataset are shown as red dots and red lines called whiskers connect data points to the mean for the merge of the previous data set (Figure~\ref{fig:TBTADoseCurve}C). For instance, Comparison of control treatments with treatments with either TBTA-(CO2H)3 (data points shown in violet) or TBTA-(CO2Na)3 (data points shown in green) (Figure~\ref{fig:TBTADoseCurve}D) demonstrates that TBTA-(CO2Na)3 is less bioactive than TBTA-(CO2Me)3 even though the seedlings appear (by eye) morphologically similar (not shown). In this work we will refine our description of bioactivity for select compounds using these style of bagplot visualization. 
+
+\subsection{Testing TBTA catalyst variants for bioactivity}
+
+A dose curve analysis revealed the TBTA-(CO2Na)3 catalyst was the least potent to cause bioactive effects and inhibit hypocotyl or root growth (Figure~\ref{fig:TBTADoseCurve2}A-F, where F is from previous panel for comparison). The control values for hypocotyl and root (125,100) are achieved for lower doses of 1, 5,and 15$\mu$M for the TBTA variants, as seen with the position of the red astrisk (Figure~\ref{fig:TBTADoseCurve2}A-C). The higher doses of 25, 50, 75 and 100 $\mu$M are more potent to cause a decrease in values to (100,100) for TBTA-(CO2H)3 (Figure~\ref{fig:TBTADoseCurve2}D) and (100,75) for TBTA-(CO2Me)3 (Figure~\ref{fig:TBTADoseCurve2}E) compared to (125,100) for TBTA-(CO2Na)3. 
+
+%discuss that 75 mu M dose had lower valuese probably due to solubility.
+
+\begin{figure}
+\includegraphics[scale=0.78]{TBTADoseCurve}
+\caption{Bivariate bagplot analysis of TBTA-(CO2H)3, TBTA-(CO2Me)3, and TBTA-(CO2Na)3. A-F.  Respective TBTA treatment with the dose shown as transparent layers, with higher doses shown on the foreground layer for all bagplots.}
+\label{fig:TBTADoseCurve2}
+\end{figure}
+
+%Change bagplot colors
+
+\subsection{Validation of fluorescent click reactions by bioactivity guided fractionation}
+
+The analysis of bioactivity of the terminal acetylene library and reagents such as TBTA-(CO2Na)3 was a prerequisite to our intended investigation which was to identify bioactive fluorescently tagged molecules. We previously described several libraries derived from high throughput reactions with acetylenes and azides using ligand catalyzed click chemistry (Figure~\ref{fig:SynthFluorLibraries}) with a panel of fluorescent dye azides (Figure~\ref{fig:BlockADyes}A-D) and one 1-azido-beta-D-glucopyranose. The unpurified click reactions were screened in duplicate 96-well format to identify bioactive click products in {\it Arabidopsis thaliana}. 
+
+In the biological screen we were able to buffer the copper salts necessary for the click reaction with the addition of $\mu$M EDTA as a chelator and utilized the TBTA-(CO2Na)3 catalyst. A number of bioactive reactions were discovered in this fashion, but it was not known if the bioactive result was from the original acetylene, a new product, or undesired side products. Analytical HPLC and bioactivity guided fractionation were used to identify reactions with true bioactive 1,2,3-triazole products, as evidenced by mass spectrometry (Table \ref{table:FractionationOverviewZ}).
+
+
+\clearpage
+
+
+\begin{table}\centering
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}
+    \hline
+    Reaction ID       & PP & PC & FM & CP & CC \\ \hline
+    CLK003G05\_Dansyl & 1                & 0                   & FG             & 26*               & 26*,3  \\ \hline
+    CLK003H03\_Dansyl & 1                & 0                   & F3             &                   & 34-37*,41  \\ \hline
+    CLK004F10\_C\-2   & 1                & 0                   & FG             & 2,24              & 2        \\ \hline
+    CLK015C07\_Glc    & 0                & 1                   & F5             & n/a               & 26-29,33-35  \\ \hline
+    CLK018G02\_FITC   & 0                & 1                   & F6             & n/a               & 25,28,43 \\ \hline
+    CLK018C11\_Glc    & 0                & 1                   & F4             & 14-15,25-28       & 19*,20,23-26  \\ \hline
+    CLK015H06\_C\-2   & 1                & 1                   & F3             & 6,23*,27*         & 13,26-28,27 \\ \hline
+    CLK016D02\_FITC   & 1                & 1                   & F3             & 2,24-26,31*       & 1,6 
+\\ \hline
+    CLK017F11\_C\-3   & 1                & 0                   & F3             & 2,3,24            & 2,39 
+\\ \hline
+    CLK018G02\_FITC   & 1                & 0                   & F3             & 1,2,44-45         & 15*,44 
+\\ \hline
+    CLK019E08\_FITC   & 1                & 1                   & F3             & 17*,19,32         & 2,21 
+\\ \hline
+    CLK019E08\_C\-3   & 1                & 1                   & F3             & 18                & 1-3,31,*40 
+\\ \hline
+    CLK020A07\_C\-2   & 1                & 0                   & F              & 1-3,36,37         & 2,21,35*-37  \\ \hline
+    CLK021C05\_Dansyl & 0                & 1                   & F3             & 2                 & 2,21,35*,37  \\ \hline
+    CLK022F02\_Dansyl & 1                & 1                   & F3             & 2                 & 25,35*,37,42  \\ \hline
+    CLK023C04\_Dansyl & 0                & 1                   & F3             & 0                 & 0
+\\ \hline
+    CLK024F02\_Dansyl & 0                & 1                   & F3             & 18                & 1-3,31*,40  \\ \hline
+    CLK026G08\_Dansyl & 0                & 1                   & F3             & 1-3,36,37         & 2,21,35*-37 \\ \hline
+    CLK026G08\_Glc    & 0                & 1                   & F3             & 2                 & 25,35*,37,42 \\ \hline
+    CLK029B07\_Dansyl & 0                & 1                   & F3             & 2,41                 & 36* 
+\\ \hline
+    CLK031C06\_Glc    & 1                & 1                   & F              & 3                 & 2,9*,34*,40 \\ \hline
+    CLK034F10\_Dansyl & 1                & 1                   & F3             & 2                 & 2,40 
+\\ \hline
+   \end{tabular}
+   \caption {Table showing the results for the fractionation screen of candidate bioactive click reactions. The column headers are product parent (PP), product conjugate (PC), fractionation method (FM), comment on phenotype of parent (CP) with fraction indicated or phenotype of the conjugate (CC). Where * denotes a fluorescent fraction.}
+\label{table:FractionationOverviewZ}
+\end{table}
+
+
+
+%add cat number to methods
+
+
+\subsection{Analytical HPLC and fractionation of bioactive click reactions}
+
+Candidate reactions were studied by analytical HPLC for product formation and fractions corresponding to the bioactive product(s) were isolated by fractionation.
+
+%buggy float
+%\input{HPLCResultz}
+%disable to get rid of errors
+
+%\clearpage
+
+%redo with table of plus and minus where the legend was
+
+\subsection{A demo click reaction with a bioactive product and inactive analog}
+
+The bioactive compound CLK042A09 dansyl block A, was identified from a bioactive click reaction with an inactive parent acetylene (shown at similar magnification) (Figure~\ref{fig:DemoBioactiveClickReaction}). Here, CLK042A09 dansyl block A,  was fractionated and produced bioactive fractions unique to the parent acetylene CLK042A09 (Figure~\ref{fig:DemoBioactiveClickReaction}). These compounds were not identified in the primary screen of terminal acetylenes. A typical click reaction with the terminal acetylene CLK042A09 and the nearest neighbor CLK039G03 with dansyl block A recapitulated bioactivity observed during our screen Figure~\ref{fig:DemoBioactiveClickReaction}A-E). When we used DMSO alone or CLK042A09 there was no significant change in phenotype Figure~\ref{fig:DemoBioactiveClickReaction}A and B). When we used dansyl block A with CLK042A09 and no TBTA-(CO2Na)3 catalyst we observed no product and no phenotype (Figure~\ref{fig:DemoBioactiveClickReaction}C). Addition of the TBTA-(CO2Na)3 catalyst to the click reaction caused a novel phenotype corresponding to the expected product (Figure~\ref{fig:DemoBioactiveClickReaction}D). The nearest neighbor CLK039G03 failed to produce a phenotype from a click reaction with dansyl block A although the reaction produced the expected product (Figure~\ref{fig:DemoBioactiveClickReaction}E). In the next chapter (Chapter 4: Phenotypes of Bioactives) we will explore the product CLK042A09 dansyl block A.  
+
+\begin{figure}
+\includegraphics[scale=0.50]{DemoBioactiveClickReaction}
+\caption{Representative click reaction to demonstrate the bioactivity of a click reaction from the terminal acetylene CLK042A09 and the amine azide block A. A. DMSO. B. Block A. C. Reaction with no TBTA-(CO2Na)3 added. D. A successful bioactive click reaction with TBTA-(CO2Na)3, CLK042A09 and block A. E. The nearest neighbor CLK039G03 was not bioactive. All seedlings are shown at the same magnification.}
+\label{fig:DemoBioactiveClickReaction}
+\end{figure}
+
+%MS DATA table
+
+%%%%%%%%
+%%%%%%%%%
+
+\section{Summary}
+
+\subsection{Bioactives from failed click reactions}
+
+A majority of false positive hits produced interesting phenotypes through a synergy between the mild bioactivity of TBTA-(CO2Na)3, residual dye-azide, and/or terminal acetylene. Hits were scored and prioritized after analytical and preparative HPLC especially when the mass ion for the predicted click product was observed (Figure~\ref{fig:LeadPrioritization}). When bioactivity was due to residual terminal acetylene the fractionation experiment yielded identical bioactive fractions for both the acetylene and the reaction. In some cases synergy alone was not sufficient to explain the reason for a false positive phenotype. A number of cases can be explained where no major product was generated in the reaction, but new fragments with less retention on the reverse phase appeared. These were most likely break down products from the click reaction conditions.
+
+Further investigation is necessary to elucidate the structure of a number bioactive click reactions that could not be structurally validated by mass spectrometry, but appeared by analytical HPLC and the fractionation experiment to be the expected fluorescent click product. This is true of CLK029B07 Dansyl which did not generate a mass ion in accordance with the expected molecular formula. 
+
+
+\begin{figure}
+\includegraphics[scale=0.50]{LeadPrioritization}
+\caption{Lead prioritization scheme. Prioritization of hits for follow up was determined continually during the chemical genetic screen by collecting data for activity, HPLC product retention, and DAD spectrum. The highest priority was reserved for click reactions that produced bioactive fractions not attributable to the parent acetylene and had the expected mass ion in ESI/MS.}
+\label{fig:LeadPrioritization}
+\end{figure}
+
+\section{Discussion}
+
+At the onset of our investigation we chose to evaluate the bioactivity of 4,002 terminal acetylenes (clickables) by high throughput biological screening with {\it Arabidopsis} (Figure~\ref{fig:ArabidopsisPrimaryScreen}). A number of bioactive multiple common substructures (MCS) were identified (Figure~\ref{fig:CladeB_MDS})-(Figure~\ref{fig:CladeM_GermPanel}), and the effects on {\it Arabidopsis} was presented briefly. We sought a means to use our clickable library for chemical genetics and for the combinatorial generation of our libraries using click chemistry (Figure~\ref{fig:SynthFluorLibraries}). We hypothesized the TBTA-(CO2Na)3 ligand would be more charged than the original ligand, thus affecting permiability and this could be advantageous for screening reaction products directly. The effects of the TBTA-(CO2Na)3 were characterized as less than the acid counterpart as seen in the bagplot graphs (Figure~\ref{fig:TBTADoseCurve}). It remained to be determined if the permiability was decreased for TBTA-(CO2Na)3, but this was inconsequential for our purposes after the biological effects of this ligand were determined to be lessened (Figure~\ref{fig:TBTADoseCurve2}F).
+
+The fractionation of hits from the combinatorial libraries was a useful procedure to isolate pure fractions of compounds for bioactivity and mass spectrum analysis where necessary. One compound, CLK042A09 Dansyl, was determined to be the expected structure (Figure~\ref{fig:CLK042A09_DansylBlockA}). We see clearly that the unpurified reaction between the acetylene CLK042A09 and dansyl block A produces a phenotype in {\it Arabidopsis} when there are suitable conditions for the click reaction (such as inclusion of TBTA-(CO2Na)3) (Figure~\ref{fig:DemoBioactiveClickReaction}D).
+
+\section{Conclusion}
+
+Two terminal acetylene clades are interesting chemical genetic probes in there own right these will be explored in the begining of the next chapter (Chapter 4: Phenotypes of Bioactives). The clade M germination inhibitors (Figure~\ref{fig:CladeM_GermPanel}) and the Clade O inhibitors of anisotropic growth (Figure~\ref{fig:PTFP2}B and C). Three probes were identified as bonifide bioactive click reaction products: CLK021C05 Dansyl, CLK024F02 Dansyl and CLK042A09 Dansyl. These were all priority 2 leads (Figure~\ref{fig:LeadPrioritization}) as shown in our scheme since the acetylene fragments themselves had some bioactivity. These rare probes will also be examined further in the next chapter using bagplots. All other candidates were not considered further. We did not find any priority 1 leads. These priority 1 leads may potentially be found through the exploration of the chemical space available in the remaining ZINC80K or through the generation of novel probes. One method could be through the use of Ruthenium to catalyze the formation of the other regioisomer of the click reaction the 1,4,5-triazole. Another method could put the whole scheme on a molecular weight reduction to capitalize on earlier studies of fluorogenic click reactions with azido coumarin variants \cite{sivakumar2004fluorogenic}. %\cite
+
+%%Consider adding these libraries and the chemical space to the discussion
+
