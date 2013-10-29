@@ -1,517 +1,1093 @@
-%https://www.writelatex.com/461134mrdfhv
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Proceedings of the National Academy of Sciences (PNAS)
-% LaTeX Template
-% Version 1.0 (19/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% The PNAStwo class was created and is owned by PNAS:
-% http://www.pnas.org/site/authors/LaTex.xhtml
-% This template has been modified from the blank PNAS template to include
-% examples of how to insert content and drastically change commenting. The
-% structural integrity is maintained as in the original blank template.
-%
-% Original header:
-%% PNAStmpl.tex
-%% Template file to use for PNAS articles prepared in LaTeX
-%% Version: Apr 14, 2008
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-%------------------------------------------------
-% BASIC CLASS FILE
-%------------------------------------------------
-
-%% PNAStwo for two column articles is called by default.
-%% Uncomment PNASone for single column articles. One column class
-%% and style files are available upon request from pnas@nas.edu.
-
-%\documentclass{pnasone}
-\documentclass{pnastwo}
-
-%------------------------------------------------
-% POSITION OF TEXT
-%------------------------------------------------
-
-%% Changing position of text on physical page:
-%% Since not all printers position
-%% the printed page in the same place on the physical page,
-%% you can change the position yourself here, if you need to:
-
-% \advance\voffset -.5in % Minus dimension will raise the printed page on the 
-                         %  physical page; positive dimension will lower it.
-
-%% You may set the dimension to the size that you need.
-
-%------------------------------------------------
-% GRAPHICS STYLE FILE
-%------------------------------------------------
-
-%% Requires graphics style file (graphicx.sty), used for inserting
-%% .eps/image files into LaTeX articles.
-%% Note that inclusion of .eps files is for your reference only;
-%% when submitting to PNAS please submit figures separately.
-
-%% Type into the square brackets the name of the driver program 
-%% that you are using. If you don't know, try dvips, which is the
-%% most common PC driver, or textures for the Mac. These are the options:
-
-% [dvips], [xdvi], [dvipdf], [dvipdfm], [dvipdfmx], [pdftex], [dvipsone],
-% [dviwindo], [emtex], [dviwin], [pctexps], [pctexwin], [pctexhp], [pctex32],
-% [truetex], [tcidvi], [vtex], [oztex], [textures], [xetex]
-
-\usepackage{graphicx}
-
-%------------------------------------------------
-% OPTIONAL POSTSCRIPT FONT FILES
-%------------------------------------------------
-
-%% PostScript font files: You may need to edit the PNASoneF.sty
-%% or PNAStwoF.sty file to make the font names match those on your system. 
-%% Alternatively, you can leave the font style file commands commented out
-%% and typeset your article using the default Computer Modern 
-%% fonts (recommended). If accepted, your article will be typeset
-%% at PNAS using PostScript fonts.
-
-% Choose PNASoneF for one column; PNAStwoF for two column:
-%\usepackage{PNASoneF}
-%\usepackage{PNAStwoF}
-
-%------------------------------------------------
-% ADDITIONAL OPTIONAL STYLE FILES
-%------------------------------------------------
-
-%% The AMS math files are commonly used to gain access to useful features
-%% like extended math fonts and math commands.
-
-\usepackage{amssymb,amsfonts,amsmath}
-
-%------------------------------------------------
-% OPTIONAL MACRO FILES
-%------------------------------------------------
-
-%% Insert self-defined macros here.
-%% \newcommand definitions are recommended; \def definitions are supported
-
-%\newcommand{\mfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
-%\def\s{\sigma}
-
-%------------------------------------------------
-% DO NOT EDIT THIS SECTION
-%------------------------------------------------
-
-%% For PNAS Only:
-\contributor{Submitted to Proceedings of the National Academy of Sciences of the United States of America}
-\url{www.pnas.org/cgi/doi/10.1073/pnas.0709640104}
-\copyrightyear{2008}
-\issuedate{Issue Date}
-\volume{Volume}
-\issuenumber{Issue Number}
-
-%----------------------------------------------------------------------------------------
-
-\begin{document}
-
-%----------------------------------------------------------------------------------------
-%	TITLE AND AUTHORS
-%----------------------------------------------------------------------------------------
-
-\title{Twisted Growth, Small Molecules, and Phenotype Morphometrics} % For titles, only capitalize the first letter
-
-%------------------------------------------------
-
-%% Enter authors via the \author command.  
-%% Use \affil to define affiliations.
-%% (Leave no spaces between author name and \affil command)
-
-%% Note that the \thanks{} command has been disabled in favor of
-%% a generic, reserved space for PNAS publication footnotes.
-
-%% \author{<author name>
-%% \affil{<number>}{<Institution>}} One number for each institution.
-%% The same number should be used for authors that
-%% are affiliated with the same institution, after the first time
-%% only the number is needed, ie, \affil{number}{text}, \affil{number}{}
-%% Then, before last author ...
-%% \and
-%% \author{<author name>
-%% \affil{<number>}{}}
-
-%% For example, assuming Garcia and Sonnery are both affiliated with
-%% Universidad de Murcia:
-%% \author{Roberta Graff\affil{1}{University of Cambridge, Cambridge,
-%% United Kingdom},
-%% Javier de Ruiz Garcia\affil{2}{Universidad de Murcia, Bioquimica y Biologia
-%% Molecular, Murcia, Spain}, \and Franklin Sonnery\affil{2}{}}
-
-\author{Andrew J. Defries\affil{1}{University of California, Riverside, USA},
-Michaela Spitzer\affil{2}{University of Edinburgh, UK},
-Kristine Azar\affil{1},
-Michael Pirrung\affil{1},
-\and
-Sean Cutler\affil{1}{}}
-%Mike Tyers?
-
-\contributor{Submitted to Proceedings of the National Academy of Sciences
-of the United States of America}
-
-%----------------------------------------------------------------------------------------
-
-\maketitle % The \maketitle command is necessary to build the title page
-
-\begin{article}
-
-%----------------------------------------------------------------------------------------
-%	ABSTRACT, KEYWORDS AND ABBREVIATIONS
-%----------------------------------------------------------------------------------------
-
-\begin{abstract}
-Chemical genetic exploration of the clickable library of 4,000 terminal acetylenes revealed an iodo-acetylene containing verbanone, CLK026D11. The synthetic volatile compound, CLK026D11, strongly inhibited growth of {\it Arabidopsis thaliana} in growth media and was potent also as a volatile exchanged from impregnated media. A developmental analysis was performed with {\it Arabidopsis} as well as other angiosperms to elaborate the spectrum of defects caused by administration of CLK026D11. Morphological defects involving swollen and twisted hypocotyl cell files. Through collaborative efforts the bioactive spectrum of CLK026D11 was determined for the model plant {\it Arabidopsis thaliana}, the model yeast {\it Saccharomyces cerevisiae}, model bread mold {\it Neurospora crassa}. The molecular target of CLK026D11 is not known, and evidence is presented hereforth to accelerate future advances.
-\end{abstract}
-
-%------------------------------------------------
-
-\keywords{Keyword1 | Keyword2 | Keyword3} % When adding keywords, separate each term with a straight line: |
-
-%------------------------------------------------
-
-%% Optional for entering abbreviations, separate the abbreviation from
-%% its definition with a comma, separate each pair with a semicolon:
-%% for example:
-%% \abbreviations{SAM, self-assembled monolayer; OTS,
-%% octadecyltrichlorosilane}
-
-% \abbreviations{}
-\abbreviations{SAM, self-assembled monolayer; OTS, octadecyltrichlorosilane}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATION CONTENT
-%----------------------------------------------------------------------------------------
-
-%% The first letter of the article should be drop cap: \dropcap{} e.g.,
-%\dropcap{I}n this article we study the evolution of ''almost-sharp'' fronts
-
-\section{Introduction}
-
-\dropcap{N}he growth of the dicotyledonous plant {\it Arabidopsis} follows a simple and distinct set of developmental milestones (Figure ~\ref{fig:GrowthandDevelopment}). When the seed absorbs water and is properly chilled at 4${}^\circ$ C for four days the seed will germinate (Figure ~\ref{fig:GrowthandDevelopment} stage 01). Hydrostatic pressure causes the radicle, or primordial root, to emerge from the seed coat (Figure ~\ref{fig:GrowthandDevelopment} stage 3-5). Hypocotyl elongation is exaggerated in the dark and will continue until exposed to light (Figure ~\ref{fig:GrowthandDevelopment} stage 6-9)\cite{lehman1996hookless1}. The hypocotyl elongation aids the escape from the seed husk while the cotyledon and apical hook retain a protective angle until permissive conditions arise, as will be detailed.
-
-The apical meristem, the future above ground body of the plant is a subpopulation of totipotential cells \cite{westhoff1998molecular}. This important population of cell is physically protected from damage during seedling emergence by a coordinated process between the cell adjacent to the cotyledon on the stem (Figure ~\ref{fig:CotyledonandAngleDemo}A-E). These cells grow at an uneven rate on the apical and basal side of the stem to preserve the apical hook. Exposure to light accompanied with soil emergence causes a loss of skotomorphogenesis or differential cellular growth and the apical hook \cite{guzman1990exploiting}. During this process the cotyledon is changing internal metabolism, enlarges, and emerges from the soil gravitropically and then peels back (Figure ~\ref{fig:CotyledonandAngleDemo}B-C) to begin the first true leaf development from stem cells in the apical meristem (Figure ~\ref{fig:CotyledonandAngleDemo}C) \cite{westhoff1998molecular}.
-
-Growth of dicots in the dark is characterized by cell elongation in the direction opposite to gravity, and this response terminates in response to light. Etiolated anisotropic hypocotyl expansion is a phenotypic process limited by hydrostatic processes in elongation and expansion regulated by cell wall synthesis and developmental programs \cite{ishida2007twisted,lehman1996hookless1}. Etiolated growth facilitates emergence from the ground, and leads to an ideal spatial separation of the root and shoot with air, water and light gradients that dictate future organ differentiation in response to photosynthesis. It is our goal to discover compounds that perturb any or all of the processes of etiolated growth and intend to study these bioactives to determine the overall mechanism of action.
-
-%------------------------------------------------
-
-\section{Results}
-
-We have identified several bioactives from a novel small molecule library of terminal acetylenes that are promising probes for plant chemical genetics. Final lead probes were discovered by first chemical genetic screening of the model plant {\it Arabidopsis thaliana} and model yeast {it Saccharomyces cerevisiae} on the terminal acetylene four thousand compound building block library. m {\%} were bioactive in plant Figure \ref{ScreenTreeFlowChartWPercent} , and z {\%} were bioactive in yeast Figure \ref{ScreenTreeFlowChartWPercent}. Compounds that caused a change in the typical growth and development were considered bioactive. Bioactive terminal acetylenes were found to span several domains of chemical space Figure \ref{Clickable_rgl_color}. We navigated this chemical space using a high throughput combinatorial approach and found three probes amenable to functionalization into photoaffinity ligand without a loss in bioactivity.
-
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.35]{img59}
-\caption{Clade of compounds related to CLK026D11 possessing a camphor-like carbon skeleton shown as black dots. Colors indicate compounds that group together and are 70{\%} similar. The number of colors for plotting is limited as such the colors have been re-used on other clades.}
-\label{fig:CamphorLikeClade}
-\end{figure}
-
-Clade N, with the core iodoacetylene member CLK026D11 was compared to compounds with similar pinane-like and adamantane carbon skeletons in the clickable library (Figure ~\ref{fig:CamphorLikeClade}A, inset blue circle, see supplementary table). Despite possessing similar carbon skeletons or iodoacetylenes the compounds CLK026D11 and CLK026H11 distinctly caused the same phenotype (Figure ~\ref{fig:PTFP2}). CLK026D11 is similar to compounds in natural product datasets, and this may be a consequence of the synthesis of CLK026D11 and CLK026H11 from verbenone and verbanone respectively (Figure ~\ref{fig:CLK026D11Retrosynthesis}A-D)\cite{dikusar2001synthesis}.
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.35]{img60}
-\caption{Reported synthesis of CLK026D11 from verbanone.}
-\label{fig:CLK026D11Retrosynthesis}
-\end{figure}
-
-\subsubsection{CLK026D11 is a potent volatile inhibitor of anisotropic growth}
-
-Volatiles, such as ethylene, can function as growth regulators in plants \cite{lehman1996hookless1}. Preparation of the iodoacetylenes CLK026D11 and CLK026H11 describes the compounds as unstable, although 1HNMR analysis confirmed the structure as reported \cite{dikusar2001synthesis}. Volatility of CLK026D11 was suspected due to a low molecular weight and the reason for observed variation on the edges of treatment and control plates. An experiment was conducted to demonstrate CLK026D11 was potent at a distance. {\it Arabidopsis} was grown in media vertically and another plate containing compound was placed on top to exchange head space.
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.35]{img61}
-\caption{CL026D11 is bioactive as a volatile. A. Merge of DMSO. B. Increasing doses of CLK026D11 causes a significant growth defect as low as 1$\mu$M. C. Iodine and the headspace of this plate does not cause growth inhibition. D. The head space of CLK026D11 (D5H) causes similar growth defects as plants grown directly on the same dose. Doses are denoted D1-5 for 1, 5, 10,, 15, 25 $\mu$M.}
-\label{fig:CLK026D11ComesThroughTheAir}
-\end{figure}
-%annotate image more to follow comparison symbols or circles.
-
-Growth of plates containing DMSO alone showed typical bagplot variance whereas CLK026D11 was potent to inhibit hypocotyl and root growth down to 1 $\mu$M (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}A and B). Iodine was used as a control as it was suspected that the iodoacetylene CLK026D11 may degrade to release iodine. Nonetheless, iodine at all concentrations was inactive, and did not cause a phenotype by exchanging head space with the control plate (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}C).  CLK026D11 was potent to produce identical phenotypes in seedlings on the control plate when place a few centimeters away at 25 $\mu$M doses (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}D).
-
-\subsubsection{Cellular features of the perturbation caused by CLK026D11}
-
-\begin{figure}
-\includegraphics[scale=0.10]{img62}
-\caption{CLK026D11 causes anisotropic hypocotyl growth phenotypes with a handedness similar to chuboxypyr. A. Columbia-0 seedling control treatment (1{\%} DMSO). B. 25$\mu$M of chuboxypyr causes right handed twisting of cell files in the hypocotyl. C. 1 $\mu$M dose of CLK026D11 causes a similar right handed twisting defect with enhanced severity. D. 5 $\mu$M of CLK026D11 causes loss of cell polarity and leads to swollen and bulging cells. Scale bar shows 300 $\mu$ meters.}
-\label{fig:CLK026D11SEM}
-\end{figure}
-
-Low doses of CLK026D11 and structurally dissimilar chuboxypyr \cite{Zhao_Hyr1} induced right handed helical hypocotyl twisting as visualized by scanning electrom microscopy (SEM) (Figure ~\ref{fig:CLK026D11SEM}B and C), whereas higher doses disrupted etiolated ansiotropoic hypocotyl expansion to result in radially expanding cells rather than typical expansion lengthwise against gravity (Figure ~\ref{fig:CLK026D11SEM}D). These growth features were known to be caused by a number of structurally dissimilar compounds such as oryzalin \cite{bannigan2006cortical,bartels1973comparison}, taxol \cite{baskin1994morphology,morejohn1987oryzalin}, and morlin \cite{debolt2007morlin} with modes of action related to microtubule homeostasis [185] and cellulose synthase function (CeSA) \cite{debolt2007morlin}.
-
-%%%%%%%%%%%  add info about yeast dose curve, and finish with algae motility problem
-
-
-%%%%% morphometrics piece
-
-
-
-%------------------------------------------------
-
-\section{Discussion}
-
-\subsubsection{CLK026D11 is unique and potent bioactive but could not be used to reveal mechanism of action (MOA)}
-
-Exploration of the swollen cell phenotype caused by CLK026D11 and CLK026H11 (Clade O) is of significance to elucidate molecular and cellular events that lead to the adaptive evolution of skotomorphogenesis and etiolated growth in a number of angiosperms \cite{gendreau1997cellular, gendreau1998phytochrome}. The clade N compounds phenocopy mutants characterized as microtubule proteins \cite{nakamura2004low} and can be examined further with mutant analysis. 
-
-%explain this assay in methods as well as iodine dissolution
-
-
-%Bioactivity of CLK026D11 across Eukaryotic taxa (data not shown) was interesting but did not provide complementary evidence to determine the MOA in {\it Arabidopsis}. 
-
-Clade M is has probes that come with a literature history, thus when evidence is discovered there is already information available for comparison. We will see how one of two clade M probes can be used to find the responsible allele in Chapter 5. Target identification efforts with EMS. 
-
-The bioactivity of the CLK026D11 was interesting but was difficult to determine MOA in {\it Arabidopsis} since the compound was volatile in the growth media and caused a significant amount of phenotype variation in large plates. CLK026D11 did participate in the click reaction to give the expected product, but was not bioactive when reacted with the fluorophore azide building blocks tested. Therefore, CLK026D11 was not useful, in our scheme, as a tagged compound and was discarded.
-
-
-
-%----------------------------------------------------------------------------------------
-%	MATERIALS AND METHODS
-%----------------------------------------------------------------------------------------
-
-%% Optional Materials and Methods Section
-%% The Materials and Methods section header will be added automatically.
-
-\begin{materials}
-
-\subsection{Preparation of assay plates for the testing of the bioactive volatile CLK026D11}
-
-Single well assay plates (NUNC) were grown vertically and taped together with different doses of 1, 5, 10, 15, 25 $\mu$M CLK026D11 and (1{\%}) DMSO was used as control. Growth media and seed preparation was indicated previously (Materials and Methods: Chapter 3), except seedlings were placed onto the media on the fourth day or the first day of growth in dark. Plates were photographed on the seventh day using a digital camera and LED transillumination. 
-
-%\subsection{Qualitative bagplot: image aquisition, photography setup, and digital processing for length variables}
-
-\subsection{Quantitative bagplot: image acquisition, photography setup, and digital processing for length variables}
-
-\begin{figure}
-\centering
-\includegraphics[scale=0.25]{2D_Capture}
-\caption{Two dimensional capture of vertically grown {\it Arabidopsis thaliana} by digital imaging. A. Photographs were taken of the assay plate from a fixed distance above plates transilluminated from below. B. Measurements of the hypocotyl (shown as x variable for x-axis) and root (shown as y variable for y-axis are conducted using ImageJ. C. Demonstration of typical control (DMSO 1{\%} data plotted as a bi-variate x-y graph for hypocotyl and root length of Col and Ler seedlings.)}
-\label{fig:2D_Capture}
-\end{figure}
-
-Images for quantitative bagplots were acquired using a hand held 2.0 Mega Pixel digital camera. Assay plates were photographed using standard position and distances for consistancy (Figure~\ref{fig:2D_Capture}). Illumination was provided by an LED transilluminator placed directly underneath the assay plates. Photographs were measured by hand using the ImageJ polyline tool. Hypocotyl and root variables were exported from ImageJ and processed in R using the bivariate bagplot() call in the package aplapack.
-
-%\subsection{Bivariate bagplot using Bioconductor aplpack)
-
-%R code
-
-\subsection{Preparation of {\it Arabidopsis} for scanning electron microscopy}
-
-Arabidopsis seedlings prepared identically to the chemical genetic screen are imbibed for 4 days at 4${}^\circ$ C and grown for 3 days in the dark. On the final day seedlings were transferred directly onto a Hitachi scanning electron microscope (SEM) specimen stage with adhesive and flash frozen immediately using isopentane chilled via liquid nitrogen. The sample was placed into the vacuum chamber of the SEM for electron scan and imaging. 
-
-
-
-\end{materials}
-
-%----------------------------------------------------------------------------------------
-%	APPENDICES (OPTIONAL)
-%----------------------------------------------------------------------------------------
-
-\appendix
-An appendix without a title.
-
-\appendix[Appendix title]
-An appendix with a title.
-
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
-
-\begin{acknowledgments}
-This work was partially supported by a grant from the Spanish Ministry of Science and Technology.
-\end{acknowledgments}
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-%% PNAS does not support submission of supporting .tex files such as BibTeX.
-%% Instead all references must be included in the article .tex document. 
-%% If you currently use BibTeX, your bibliography is formed because the 
-%% command \verb+\bibliography{}+ brings the <filename>.bbl file into your
-%% .tex document. To conform to PNAS requirements, copy the reference listings
-%% from your .bbl file and add them to the article .tex file, using the
-%% bibliography environment described above.  
-
-%%  Contact pnas@nas.edu if you need assistance with your
-%%  bibliography.
-
-% Sample bibliography item in PNAS format:
-%% \bibitem{in-text reference} comma-separated author names up to 5,
-%% for more than 5 authors use first author last name et al. (year published)
-%% article title  {\it Journal Name} volume #: start page-end page.
-%% ie,
-% \bibitem{Neuhaus} Neuhaus J-M, Sitcher L, Meins F, Jr, Boller T (1991) 
-% A short C-terminal sequence is necessary and sufficient for the
-% targeting of chitinases to the plant vacuole. 
-% {\it Proc Natl Acad Sci USA} 88:10362-10366.
-
-
-%% Enter the largest bibliography number in the facing curly brackets
-%% following \begin{thebibliography}
-
-\begin{thebibliography}{10}
-\bibitem{BN}
-M.~Belkin and P.~Niyogi, {\em Using manifold structure for partially
-  labelled classification}, Advances in NIPS, 15 (2003).
-
-\bibitem{BBG:EmbeddingRiemannianManifoldHeatKernel}
-P.~B\'erard, G.~Besson, and S.~Gallot, {\em Embedding {R}iemannian
-  manifolds by their heat kernel}, Geom. and Fun. Anal., 4 (1994),
-  pp.~374--398.
-
-\bibitem{CLAcha1}
-R.R.~Coifman and S.~Lafon, {\em Diffusion maps}, Appl. Comp. Harm. Anal.,
-  21 (2006), pp.~5--30.
-
-\bibitem{DiffusionPNAS}
-R.R.~Coifman, S.~Lafon, A.~Lee, M.~Maggioni, B.~Nadler, F.~Warner, and
-  S.~Zucker, {\em Geometric diffusions as a tool for harmonic analysis and
-  structure definition of data. {P}art {I}: Diffusion maps}, Proc. of Nat.
-  Acad. Sci.,  (2005), pp.~7426--7431.
-
-\bibitem{Clementi:LowDimensionaFreeEnergyLandscapesProteinFolding}
-P.~Das, M.~Moll, H.~Stamati, L.~Kavraki, and C.~Clementi, {\em
-  Low-dimensional, free-energy landscapes of protein-folding reactions by
-  nonlinear dimensionality reduction}, P.N.A.S., 103 (2006), pp.~9885--9890.
-
-\bibitem{DoGri}
-D.~Donoho and C.~Grimes, {\em Hessian eigenmaps: new locally linear
-  embedding techniques for high-dimensional data}, Proceedings of the National
-  Academy of Sciences, 100 (2003), pp.~5591--5596.
-
-\bibitem{DoGri:WhenDoesIsoMap}
-D.~L. Donoho and C.~Grimes, {\em When does isomap recover natural
-  parameterization of families of articulated images?}, Tech. Report Tech. Rep.
-  2002-27, Department of Statistics, Stanford University, August 2002.
-
-\bibitem{GruterWidman:GreenFunction}
-M.~Gr\"uter and K.-O. Widman, {\em The {G}reen function for uniformly
-  elliptic equations}, Man. Math., 37 (1982), pp.~303--342.
-
-\bibitem{Simon:NeumannEssentialSpectrum}
-R.~Hempel, L.~Seco, and B.~Simon, {\em The essential spectrum of neumann
-  laplacians on some bounded singular domains}, 1991.
-
-\bibitem{1}
-Kadison, R.\ V.\ and Singer, I.\ M.\ (1959)
-Extensions of pure states, {\it Amer.\ J.\ Math.\ \bf
-81}, 383-400.
-
-\bibitem{2}
-Anderson, J.\ (1981) A conjecture concerning the pure states of
-$B(H)$ and a related theorem. in {\it Topics in Modern Operator
-Theory}, Birkha\"user, pp.\ 27-43.
-
-\bibitem{3}
-Anderson, J.\ (1979) Extreme points in sets of
-positive linear maps on $B(H)$. {\it J.\ Funct.\
-Anal.\
-\bf 31}, 195-217.
-
-\bibitem{4}
-Anderson, J.\ (1979) Pathology in the Calkin algebra. {\it J.\
-Operator Theory \bf 2}, 159-167.
-
-\bibitem{5}
-Johnson, B.\ E.\ and Parrott, S.\ K.\ (1972) Operators commuting
-with a von Neumann algebra modulo the set of compact operators.
-{\it J.\ Funct.\ Anal.\ \bf 11}, 39-61.
-
-\bibitem{6}
-Akemann, C.\ and Weaver, N.\ (2004) Consistency of a
-counterexample to Naimark's problem. {\it Proc.\ Nat.\ Acad.\
-Sci.\ USA \bf 101}, 7522-7525.
-
-\bibitem{TSL}
-J.~Tenenbaum, V.~de~Silva, and J.~Langford, {\em A global geometric
-  framework for nonlinear dimensionality reduction}, Science, 290 (2000),
-  pp.~2319--2323.
-
-\bibitem{ZhaZha}
-Z.~Zhang and H.~Zha, {\em Principal manifolds and nonlinear dimension
-  reduction via local tangent space alignement}, Tech. Report CSE-02-019,
-  Department of computer science and engineering, Pennsylvania State
-  University, 2002.
-\end{thebibliography}
-
-%----------------------------------------------------------------------------------------
-
-\end{article}
-
-%----------------------------------------------------------------------------------------
-%	FIGURES AND TABLES
-%----------------------------------------------------------------------------------------
-
-%% Adding Figure and Table References
-%% Be sure to add figures and tables after \end{article}
-%% and before \end{document}
-
-%% For figures, put the caption below the illustration.
-%%
-%% \begin{figure}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure}
-
-\begin{figure}[h]
-\centerline{\includegraphics[width=0.4\linewidth]{placeholder.jpg}}
-\caption{Figure caption}\label{placeholder}
-\end{figure}
-
-%% For Tables, put caption above table
-%%
-%% Table caption should start with a capital letter, continue with lower case
-%% and not have a period at the end
-%% Using @{\vrule height ?? depth ?? width0pt} in the tabular preamble will
-%% keep that much space between every line in the table.
-
-%% \begin{table}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{@{\vrule height 10.5pt depth4pt  width0pt}lrcccc}
-%% table text
-%% \end{tabular}
-%% \end{table}
-
-\begin{table}[h]
-\caption{Table caption}\label{sampletable}
-\begin{tabular}{l l l}
-\hline
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\hline
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\hline
-\end{tabular}
-\end{table}
-
-%% For two column figures and tables, use the following:
-
-%% \begin{figure*}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure*}
-
-%% \begin{table*}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{ccc}
-%% table text
-%% \end{tabular}
-%% \end{table*}
-
-%----------------------------------------------------------------------------------------
-
-\end{document}
+@article{saghatelian2005assignment,
+  title={Assignment of protein function in the postgenomic era},
+  author={Saghatelian, A. and Cravatt, B.F.},
+  journal={Nature chemical biology},
+  volume={1},
+  number={3},
+  pages={130--142},
+  year={2005},
+  publisher={Nature Publishing Group}
+}
+
+@article{grozinger2001identification,
+  title={Identification of a class of small molecule inhibitors of the sirtuin family of NAD-dependent deacetylases by phenotypic screening},
+  author={Grozinger, C.M. and Chao, E.D. and Blackwell, H.E. and Moazed, D. and Schreiber, S.L.},
+  journal={Journal of Biological Chemistry},
+  volume={276},
+  number={42},
+  pages={38837--38843},
+  year={2001},
+  publisher={ASBMB}
+}
+
+@article{chan2000chemical,
+  title={A chemical genomics approach toward understanding the global functions of the target of rapamycin protein (TOR)},
+  author={Chan, T.F. and Carvalho, J. and Riles, L. and Zheng, XF},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={97},
+  number={24},
+  pages={13227--13232},
+  year={2000},
+  publisher={National Acad Sciences}
+}
+
+
+@article{zhao2003sir1,
+  title={SIR1, an upstream component in auxin signaling identified by chemical genetics},
+  author={Zhao, Y. and Dai, X. and Blackwell, H.E. and Schreiber, S.L. and Chory, J.},
+  journal={Science Signalling},
+  volume={301},
+  number={5636},
+  pages={1107},
+  year={2003},
+  publisher={AAAS}
+}
+
+@article{dai2005genetic,
+  title={Genetic and chemical analyses of the action mechanisms of sirtinol in Arabidopsis},
+  author={Dai, X. and Hayashi, K. and Nozaki, H. and Cheng, Y. and Zhao, Y.},
+  journal={Proceedings of the National Academy of Sciences of the United States of America},
+  volume={102},
+  number={8},
+  pages={3129--3134},
+  year={2005},
+  publisher={National Acad Sciences}
+}
+
+@article{hayashi2003yokonolide,
+  title={Yokonolide B, a novel inhibitor of auxin action, blocks degradation of AUX/IAA factors},
+  author={Hayashi, K. and Jones, A.M. and Ogino, K. and Yamazoe, A. and Oono, Y. and Inoguchi, M. and Kondo, H. and Nozaki, H.},
+  journal={Journal of Biological Chemistry},
+  volume={278},
+  number={26},
+  pages={23797--23806},
+  year={2003},
+  publisher={ASBMB}
+}
+
+@article{asami2003influence,
+  title={The influence of chemical genetics on plant science: shedding light on functions and mechanism of action of brassinosteroids using biosynthesis inhibitors},
+  author={Asami, T. and Nakano, T. and Nakashita, H. and Sekimata, K. and Shimada, Y. and Yoshida, S.},
+  journal={Journal of plant growth regulation},
+  volume={22},
+  number={4},
+  pages={336--349},
+  year={2003},
+  publisher={Springer}
+}
+
+@article{raikhel2005adding,
+  title={Adding precision tools to the plant biologists' toolbox with chemical genomics},
+  author={Raikhel, N. and Pirrung, M.},
+  journal={Plant physiology},
+  volume={138},
+  number={2},
+  pages={563--564},
+  year={2005},
+  publisher={American Society of Plant Biologists}
+}
+
+@article{mccourt2010arabidopsis,
+  title={Arabidopsis: A rich harvest 10 years after completion of the genome sequence},
+  author={McCourt, P. and Benning, C.},
+  journal={The Plant Journal},
+  volume={61},
+  number={6},
+  pages={905--908},
+  year={2010},
+  publisher={Wiley Online Library}
+}
+
+@article{town2011comparative,
+  title={Comparative Genome Analysis at the Sequence Level in the Brassicaceae},
+  author={Town, C. and Schmidt, R. and Bancroft, I.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={171--194},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{FloralDip2008,
+  title={Floral dip: a simplified method for Agrobacterium-mediated transformation of Arabidopsis thaliana},
+  author={Clough, S.J. and Bent, A.F.},
+  journal={The Plant Journal},
+  volume={16},
+  number={6},
+  pages={735--743},
+  year={1998},
+  publisher={Wiley Online Library}
+}
+
+@article{knee2011germplasm,
+  title={Germplasm and Molecular Resources},
+  author={Knee, E.M. and Rivero, L. and Crist, D. and Grotewold, E. and Scholl, R.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={437--467},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{koornneef2011natural,
+  title={Natural variation in Arabidopsis thaliana},
+  author={Koornneef, M. and Reymond, M. and Alonso-Blanco, C.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={123--151},
+  year={2011},
+  publisher={Springer}
+}
+
+
+@article{lysak2011phylogeny,
+  title={Phylogeny, genome, and karyotype evolution of crucifers (Brassicaceae)},
+  author={Lysak, M.A. and Koch, M.A.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={1--31},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{quiros2011genetics,
+  title={The Genetics of Brassica oleracea},
+  author={Quiros, C.F. and Farnham, M.W.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={261--289},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{ramchiary2011genetics,
+  title={Genetics of Brassica rapa L.},
+  author={Ramchiary, N. and Lim, Y.P.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={215--260},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{parkin2011chasing,
+  title={Chasing ghosts: comparative mapping in the Brassicaceae},
+  author={Parkin, I.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={153--170},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{savolainen2011arabidopsis,
+  title={Arabidopsis lyrata genetics},
+  author={Savolainen, O. and Kuittinen, H.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={347--372},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{theissen2011genetics,
+  title={The genetics of Capsella},
+  author={Thei{\ss}en, G.},
+  journal={Genetics and Genomics of the Brassicaceae},
+  pages={373--387},
+  year={2011},
+  publisher={Springer}
+}
+
+@article{pickett1995seeing,
+  title={Seeing double: appreciating genetic redundancy},
+  author={Pickett, F.B. and Meeks-Wagner, D.R.},
+  journal={The Plant Cell},
+  volume={7},
+  number={9},
+  pages={1347},
+  year={1995},
+  publisher={American Society of Plant Biologists}
+}
+
+@article{bouche2001arabidopsis,
+  title={Arabidopsis gene knockout: phenotypes wanted},
+  author={Bouch{\'e}, N. and Bouchez, D. and others},
+  journal={Current opinion in plant biology},
+  volume={4},
+  number={2},
+  pages={111},
+  year={2001}
+}
+
+
+@article{cutler2005dude,
+  title={Dude, where's my phenotype? Dealing with redundancy in signaling networks},
+  author={Cutler, S. and McCourt, P.},
+  journal={Plant physiology},
+  volume={138},
+  number={2},
+  pages={558--559},
+  year={2005},
+  publisher={American Society of Plant Biologists}
+}
+
+@article{boyes2001growth,
+  title={Growth stage--based phenotypic analysis of Arabidopsis a model for high throughput functional genomics in plants},
+  author={Boyes, D.C. and Zayed, A.M. and Ascenzi, R. and McCASKILL, A.J. and Hoffman, N.E. and Davis, K.R. and G{\"o}rlach, J.},
+  journal={The Plant Cell Online},
+  volume={13},
+  number={7},
+  pages={1499--1510},
+  year={2001},
+  publisher={Am Soc Plant Biol}
+}
+
+@book{primrose2009principles,
+  title={Principles of genome analysis and genomics},
+  author={Primrose, S.B. and Twyman, R.},
+  year={2009},
+  publisher={Wiley-Blackwell}
+}
+
+@article{briggs2006unequal,
+  title={Unequal genetic redundancies in Arabidopsis: a neglected phenomenon?},
+  author={Briggs, G.C. and Osmont, K.S. and Shindo, C. and Sibout, R. and Hardtke, C.S.},
+  journal={Trends in plant science},
+  volume={11},
+  number={10},
+  pages={492--498},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@article{park_2009,
+  title={Abscisic acid inhibits type 2C protein phosphatases via the PYR/PYL family of START proteins},
+  author={Park, S.Y. and Fung, P. and Nishimura, N. and Jensen, D.R. and Fujii, H. and Zhao, Y. and Lumba, S. and Santiago, J. and Rodrigues, A. and Chow, T.F. and others},
+  journal={Science Signalling},
+  volume={324},
+  number={5930},
+  pages={1068},
+  year={2009},
+  publisher={AAAS}
+}
+
+
+@article{mitchison1994towards,
+  title={Towards a pharmacological genetics},
+  author={Mitchison, T.J. and others},
+  journal={Chemistry \& biology},
+  volume={1},
+  number={1},
+  pages={3},
+  year={1994}
+}
+
+@article{burdine2004target,
+  title={Target identification in chemical genetics: the (often) missing link},
+  author={Burdine, L. and Kodadek, T.},
+  journal={Chemistry \& biology},
+  volume={11},
+  number={5},
+  pages={593},
+  year={2004}
+}
+
+@article{adibekian2011click,
+  title={Click-generated triazole ureas as ultrapotent in vivo--active serine hydrolase inhibitors},
+  author={Adibekian, A. and Martin, B.R. and Wang, C. and Hsu, K.L. and Bachovchin, D.A. and Niessen, S. and Hoover, H. and Cravatt, B.F.},
+  journal={Nature Chemical Biology},
+  volume={7},
+  number={7},
+  pages={469--478},
+  year={2011},
+  publisher={Nature Publishing Group}
+}
+
+@article{walsh2006chemical,
+  title={Chemical genetics},
+  author={Walsh, D.P. and Chang, Y.T. and others},
+  journal={Chemical Reviews-Columbus},
+  volume={106},
+  number={6},
+  pages={2476--2530},
+  year={2006},
+  publisher={[Easton, Pa., etc.] American Chemical Society [etc.]}
+}
+
+@article{dobson2004chemical,
+  title={Chemical space and biology},
+  author={Dobson, C.M.},
+  journal={Nature},
+  volume={432},
+  number={7019},
+  pages={824--828},
+  year={2004},
+  publisher={Nature Publishing Group}
+}
+
+@article{schreiber2003small,
+  title={The small-molecule approach to biology},
+  author={Schreiber, S.L.},
+  journal={Chem. Eng. News},
+  volume={81},
+  number={9},
+  pages={51--61},
+  year={2003}
+}
+
+@article{schreiber1998chemical,
+  title={Chemical genetics resulting from a passion for synthetic organic chemistry},
+  author={Schreiber, S.L. and others},
+  journal={Bioorganic and Medicinal Chemistry},
+  volume={6},
+  number={8},
+  pages={1127--1152},
+  year={1998},
+  publisher={Oxford, England; New York: Pergamon, c1993-}
+}
+
+@article{blencowe2005development,
+  title={Development and application of diazirines in biological and synthetic macromolecular systems},
+  author={Blencowe, A. and Hayes, W.},
+  journal={Soft Matter},
+  volume={1},
+  number={3},
+  pages={178--205},
+  year={2005},
+  publisher={The Royal Society of Chemistry}
+}
+
+@article{bond2009photocrosslinking,
+  title={Photocrosslinking of glycoconjugates using metabolically incorporated diazirine-containing sugars},
+  author={Bond, M.R. and Zhang, H. and Vu, P.D. and Kohler, J.J.},
+  journal={Nature protocols},
+  volume={4},
+  number={7},
+  pages={1044--1063},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
+
+@book{pirrung2004molecular,
+  title={Molecular diversity and combinatorial chemistry: principles and applications},
+  author={Pirrung, M.C.},
+  volume={24},
+  year={2004},
+  publisher={Elsevier Science Limited}
+}
+
+@article{simon1992peptoids,
+  title={Peptoids: a modular approach to drug discovery},
+  author={Simon, R.J. and Kania, R.S. and Zuckermann, R.N. and Huebner, V.D. and Jewell, D.A. and Banville, S. and Ng, S. and Wang, L. and Rosenberg, S. and Marlowe, C.K.},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={89},
+  number={20},
+  pages={9367--9371},
+  year={1992},
+  publisher={National Acad Sciences}
+}
+
+@article{dorner1996synthesis,
+  title={The synthesis of peptidomimetic combinatorial libraries through successive amide alkylations},
+  author={D{\"o}rner, B. and Husar, G.M. and Ostresh, J.M. and Houghten, R.A.},
+  journal={Bioorganic \& Medicinal Chemistry},
+  volume={4},
+  number={5},
+  pages={709--715},
+  year={1996},
+  publisher={Elsevier}
+}
+
+
+@article{angell2007peptidomimetics,
+  title={Peptidomimetics via copper-catalyzed azide--alkyne cycloadditions},
+  author={Angell, Y.L. and Burgess, K.},
+  journal={Chem. Soc. Rev.},
+  volume={36},
+  number={10},
+  pages={1674--1689},
+  year={2007},
+  publisher={The Royal Society of Chemistry}
+}
+
+@article{chan2004polytriazoles,
+  title={Polytriazoles as copper (I)-stabilizing ligands in catalysis},
+  author={Chan, T.R. and Hilgraf, R. and Sharpless, K.B. and Fokin, V.V.},
+  journal={Organic letters},
+  volume={6},
+  number={17},
+  pages={2853--2855},
+  year={2004},
+  publisher={ACS Publications}
+}
+
+@article{himo2005copper,
+  title={Copper (I)-catalyzed synthesis of azoles. DFT study predicts unprecedented reactivity and intermediates},
+  author={Himo, F. and Lovell, T. and Hilgraf, R. and Rostovtsev, V.V. and Noodleman, L. and Sharpless, K.B. and Fokin, V.V.},
+  journal={Journal of the American Chemical Society},
+  volume={127},
+  number={1},
+  pages={210--216},
+  year={2005},
+  publisher={ACS Publications}
+}
+
+@article{wignall2004identification,
+  title={Identification of a novel protein regulating microtubule stability through a chemical approach},
+  author={Wignall, S.M. and Gray, N.S. and Chang, Y.T. and Juarez, L. and Jacob, R. and Schultz, P.G. and Heald, R. and others},
+  journal={Chemistry \& biology},
+  volume={11},
+  number={1},
+  pages={135--146},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{moon2002novel,
+  title={A novel microtubule destabilizing entity from orthogonal synthesis of triazine library and zebrafish embryo screening},
+  author={Moon, H.S. and Jacobson, E.M. and Khersonsky, S.M. and Luzung, M.R. and Walsh, D.P. and Xiong, W. and Lee, J.W. and Parikh, P.B. and Lam, J.C. and Kang, T.W. and others},
+  journal={Journal of the American Chemical Society},
+  volume={124},
+  number={39},
+  pages={11608--11609},
+  year={2002},
+  publisher={ACS Publications}
+}
+
+@article{williams2004identification,
+  title={Identification of compounds that bind mitochondrial F1F0 ATPase by screening a triazine library for correction of albinism},
+  author={Williams, D. and Jung, D.W. and Khersonsky, S.M. and Heidary, N. and Chang, Y.T. and Orlow, S.J.},
+  journal={Chemistry \& biology},
+  volume={11},
+  number={9},
+  pages={1251--1259},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@article{ni2005triazine,
+  title={Triazine-based tyrosinase inhibitors identified by chemical genetic screening},
+  author={Ni-Komatsu, L. and Leung, J.K. and Williams, D. and Min, J. and Khersonsky, S.M. and Chang, Y.T. and Orlow, S.J.},
+  journal={Pigment cell research},
+  volume={18},
+  number={6},
+  pages={447--453},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+
+%%%%%%
+%%%%%%
+%%%%%%%
+%end of intro
+
+@article{kolb2001click,
+  title={Click chemistry: diverse chemical function from a few good reactions},
+  author={Kolb, H.C. and Finn, MG and Sharpless, K.B.},
+  journal={Angewandte Chemie International Edition},
+  volume={40},
+  number={11},
+  pages={2004--2021},
+  year={2001},
+  publisher={Wiley Online Library}
+}
+
+@article{agard2006comparative,
+  title={A comparative study of bioorthogonal reactions with azides},
+  author={Agard, N.J. and Baskin, J.M. and Prescher, J.A. and Lo, A. and Bertozzi, C.R.},
+  journal={ACS Chemical Biology},
+  volume={1},
+  number={10},
+  pages={644--648},
+  year={2006},
+  publisher={ACS Publications}
+}
+
+@article{irwin2005zinc,
+  title={ZINC-a free database of commercially available compounds for virtual screening},
+  author={Irwin, J.J. and Shoichet, B.K.},
+  journal={Journal of chemical information and modeling},
+  volume={45},
+  number={1},
+  pages={177--182},
+  year={2005},
+  publisher={ACS Publications}
+}
+
+@article{AEABenalil,
+  title={Synthesis of 1, 2-aminoazides. Conversion to unsymmetrical vicinal diamines by catalytic hydrogenation or reductive alkylation with dichloroboranes},
+  author={Benalil, A. and Carboni, B. and Vaultier, M.},
+  journal={Tetrahedron},
+  volume={47},
+  number={38},
+  pages={8177--8194},
+  year={1991},
+  publisher={Elsevier}
+}
+
+@article{DakinWest_Rxn,
+  title={A general reaction of amino acids},
+  author={Dakin, HD and West, R.},
+  journal={Journal of Biological Chemistry},
+  volume={78},
+  number={1},
+  pages={91--104},
+  year={1928},
+  publisher={ASBMB}
+}
+
+@article{Aminoacetone_Hepworth,
+  title={Aminoacetone semicarbazone hydrochloride},
+  author={Hepworth, JD},
+  journal={Org. Synth},
+  volume={45},
+  number={1},
+  pages={3},
+  year={1976}
+}
+
+@article{moss1995conversion,
+  title={Conversion of ‘obstinate’ nitriles to amidines by Garigipati's reaction},
+  author={Moss, R.A. and Ma, W. and Merrer, D.C. and Xue, S.},
+  journal={Tetrahedron letters},
+  volume={36},
+  number={48},
+  pages={8761--8764},
+  year={1995},
+  publisher={Elsevier}
+}
+
+@article{peptoids2010photoaffinity,
+  title={Photoaffinity-Labeled Peptoids and Depsipeptides by Multicomponent Reactions},
+  author={Henze, D.M. and Kreye, O. and Brauch, S. and Nitsche, C. and Naumann, K. and Wessjohann, L.A. and Westermann, B.},
+  journal={Synthesis},
+  volume={2010},
+  number={17},
+  pages={2997--3003}
+}
+
+@article{mackinnon2007photo,
+  title={Photo-leucine incorporation reveals the target of a cyclodepsipeptide inhibitor of cotranslational translocation},
+  author={MacKinnon, A.L. and Garrison, J.L. and Hegde, R.S. and Taunton, J.},
+  journal={Journal of the American Chemical Society},
+  volume={129},
+  number={47},
+  pages={14560--14561},
+  year={2007},
+  publisher={ACS Publications}
+}
+
+@book{work1979laboratory,
+  title={Laboratory techniques in biochemistry and molecular biology},
+  author={Work, E. and Evans, W.H. and Lowe, C.R. and others},
+  volume={7},
+  year={1979},
+  publisher={Elsevier}
+}
+
+@book{bayley1983photogenerated,
+  title={Photogenerated reagents in biochemistry and molecular biology},
+  author={Bayley, H.},
+  volume={12},
+  year={1983},
+  publisher={Elsevier Science}
+}
+
+
+
+@book{kocienski2005protecting,
+  title={Protecting Groups (softcover)},
+  author={Kocienski, P.},
+  year={2005},
+  publisher={Thieme}
+}
+
+@article{cao2008chemminer,
+  title={ChemmineR: a compound mining framework for R},
+  author={Cao, Y. and Charisi, A. and Cheng, L.C. and Jiang, T. and Girke, T.},
+  journal={Bioinformatics},
+  volume={24},
+  number={15},
+  pages={1733--1734},
+  year={2008},
+  publisher={Oxford Univ Press}
+}
+
+@article{lipinski2000drug,
+  title={Drug-like properties and the causes of poor solubility and poor permeability},
+  author={Lipinski, C.A.},
+  journal={Journal of pharmacological and toxicological methods},
+  volume={44},
+  number={1},
+  pages={235--249},
+  year={2000},
+  publisher={Elsevier}
+}
+
+
+
+%%%%%%
+%%%%%%%
+@article{pennacchio2005arabidopsis,
+  title={Arabidopsis thaliana: A new test species for phytotoxic bioassays},
+  author={Pennacchio, M. and Jefferson, L.V. and Havens, K.},
+  journal={Journal of chemical ecology},
+  volume={31},
+  number={8},
+  pages={1877--1885},
+  year={2005},
+  publisher={Springer}
+}
+
+
+@article{tojo2006simple,
+  title={A simple and extremely sensitive system for detecting estrogenic activity using transgenic Arabidopsis thaliana},
+  author={Tojo, T. and Tsuda, K. and Wada, TS and Yamazaki, K. and others},
+  journal={Ecotoxicology and environmental safety},
+  volume={64},
+  number={2},
+  pages={106},
+  year={2006}
+}
+
+@book{westhoff1998molecular,
+  title={Molecular plant development from gene to plant},
+  author={Westhoff, P.},
+  year={1998},
+  publisher={Oxford, etc.: Oxfod University Press}
+}
+
+
+@article{guzman1990exploiting,
+  title={Exploiting the triple response of Arabidopsis to identify ethylene-related mutants},
+  author={Guzman, P. and Ecker, J.R.},
+  journal={The Plant Cell Online},
+  volume={2},
+  number={6},
+  pages={513--523},
+  year={1990},
+  publisher={Am Soc Plant Biol}
+}
+
+@article{ishida2007twisted,
+  title={Twisted growth and organization of cortical microtubules},
+  author={Ishida, T. and Thitamadee, S. and Hashimoto, T.},
+  journal={Journal of plant research},
+  volume={120},
+  number={1},
+  pages={61--70},
+  year={2007},
+  publisher={Springer}
+}
+
+@article{lehman1996hookless1,
+  title={HOOKLESS1, an ethylene response gene, is required for differential cell elongation in the Arabidopsis hypocotyl},
+  author={Lehman, A. and Black, R. and Ecker, J.R. and others},
+  journal={Cell},
+  volume={85},
+  number={2},
+  pages={183},
+  year={1996}
+}
+
+@article{Zhao_Hyr1,
+  title={Chemical genetic interrogation of natural variation uncovers a molecule that is glycoactivated},
+  author={Zhao, Y. and Chow, T.F. and Puckrin, R.S. and Alfred, S.E. and Korir, A.K. and Larive, C.K. and Cutler, S.R.},
+  journal={Nature chemical biology},
+  volume={3},
+  number={11},
+  pages={716--721},
+  year={2007},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{vogel1998isolation,
+  title={Isolation and characterization of Arabidopsis mutants defective in the induction of ethylene biosynthesis by cytokinin},
+  author={Vogel, J.P. and Schuerman, P. and Woeste, K. and Brandstatter, I. and Kieber, J.J.},
+  journal={Genetics},
+  volume={149},
+  number={1},
+  pages={417--427},
+  year={1998},
+  publisher={Genetics Soc America}
+}
+
+
+@article{debolt2007morlin,
+  title={Morlin, an inhibitor of cortical microtubule dynamics and cellulose synthase movement},
+  author={DeBolt, S. and Gutierrez, R. and Ehrhardt, D.W. and Melo, C.V. and Ross, L. and Cutler, S.R. and Somerville, C. and Bonetta, D.},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={104},
+  number={14},
+  pages={5854--5859},
+  year={2007},
+  publisher={National Acad Sciences}
+}
+
+@article{nakamura2004low,
+  title={Low concentrations of propyzamide and oryzalin alter microtubule dynamics in Arabidopsis epidermal cells},
+  author={Nakamura, M. and Naoi, K. and Shoji, T. and Hashimoto, T.},
+  journal={Plant and cell physiology},
+  volume={45},
+  number={9},
+  pages={1330--1334},
+  year={2004},
+  publisher={Jpn Soc Plant Physiol}
+}
+
+@article{rousseeuw1999bagplot,
+  title={The bagplot: a bivariate boxplot},
+  author={Rousseeuw, Peter J and Ruts, Ida and Tukey, John W},
+  journal={The American Statistician},
+  volume={53},
+  number={4},
+  pages={382--387},
+  year={1999},
+  publisher={Taylor \& Francis Group}
+}
+
+@article{sivakumar2004fluorogenic,
+  title={A fluorogenic 1, 3-dipolar cycloaddition reaction of 3-azidocoumarins and acetylenes},
+  author={Sivakumar, Krishnamoorthy and Xie, Fang and Cash, Brandon M and Long, Su and Barnhill, Hannah N and Wang, Qian},
+  journal={Organic letters},
+  volume={6},
+  number={24},
+  pages={4603--4606},
+  year={2004},
+  publisher={ACS Publications}
+}
+
+@article{lukowitz2000positional,
+  title={Positional cloning in Arabidopsis. Why it feels good to have a genome initiative working for you},
+  author={Lukowitz, W. and Gillmor, C.S. and Scheible, W.R.},
+  journal={Plant Physiology},
+  volume={123},
+  number={3},
+  pages={795--806},
+  year={2000},
+  publisher={Am Soc Plant Biol}
+}
+
+
+@article{blackwell2003chemical,
+  title={Chemical genetic approaches to plant biology},
+  author={Blackwell, H.E. and Zhao, Y.},
+  journal={Plant Physiology},
+  volume={133},
+  number={2},
+  pages={448--455},
+  year={2003},
+  publisher={Am Soc Plant Biol}
+}
+
+@article{kilaru2007n,
+  title={The N-Acylethanolamine-Mediated Regulatory Pathway in Plants},
+  author={Kilaru, A. and Blancaflor, E.B. and Venables, B.J. and Tripathy, S. and Mysore, K.S. and Chapman, K.D.},
+  journal={Chemistry \& biodiversity},
+  volume={4},
+  number={8},
+  pages={1933--1955},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+
+@article{teaster2007n,
+  title={N-Acylethanolamine metabolism interacts with abscisic acid signaling in Arabidopsis thaliana seedlings},
+  author={Teaster, N.D. and Motes, C.M. and Tang, Y. and Wiant, W.C. and Cotter, M.Q. and Wang, Y.S. and Kilaru, A. and Venables, B.J. and Hasenstein, K.H. and Gonzalez, G. and others},
+  journal={The Plant Cell Online},
+  volume={19},
+  number={8},
+  pages={2454--2469},
+  year={2007},
+  publisher={Am Soc Plant Biol}
+}
+
+@article{kim2010fatty,
+  title={Fatty acid amide lipid mediators in plants},
+  author={Kim, S.C. and Chapman, K.D. and Blancaflor, E.B.},
+  journal={Plant science},
+  volume={178},
+  number={5},
+  pages={411--419},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{dikusar2001synthesis,
+  title={Synthesis and Reactions of Ethynyl Derivatives of Adamantanone, Verbanone, and Verbenone},
+  author={Dikusar, EA and Kozlov, NG and Koval'skaya, SS and Popova, LA and Moiseichuk, KL},
+  journal={Russian Journal of General Chemistry},
+  volume={71},
+  number={2},
+  pages={290--293},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{bannigan2006cortical,
+  title={Cortical microtubule arrays lose uniform alignment between cells and are oryzalin resistant in the Arabidopsis mutant, radially swollen 6},
+  author={Bannigan, A. and Wiedemeier, A.M.D. and Williamson, R.E. and Overall, R.L. and Baskin, T.I.},
+  journal={Plant and cell physiology},
+  volume={47},
+  number={7},
+  pages={949--958},
+  year={2006},
+  publisher={Jpn Soc Plant Physiol}
+}
+
+
+@article{bartels1973comparison,
+  title={Comparison of trifluralin, oryzalin, pronamide, propham, and colchicine treatments on microtubules},
+  author={Bartels, P.G. and Hilton, J.L.},
+  journal={Pesticide Biochemistry and Physiology},
+  volume={3},
+  number={4},
+  pages={462--472},
+  year={1973},
+  publisher={Elsevier}
+}
+
+@article{baskin1994morphology,
+  title={Morphology and microtubule organization in Arabidopsis roots exposed to oryzalin or taxol},
+  author={Baskin, Tobias I and Wilson, Jan E and Cork, Ann and Williamson, Richard E},
+  journal={Plant and Cell Physiology},
+  volume={35},
+  number={6},
+  pages={935--942},
+  year={1994},
+  publisher={Jpn Soc Plant Physiol}
+}
+
+@article{morejohn1987oryzalin,
+  title={Oryzalin, a dinitroaniline herbicide, binds to plant tubulin and inhibits microtubule polymerization in vitro},
+  author={Morejohn, LC and Bureau, TE and Mole-Bajer, J. and Bajer, AS and Fosket, DE},
+  journal={Planta},
+  volume={172},
+  number={2},
+  pages={252--264},
+  year={1987},
+  publisher={Springer}
+}
+
+@article{gendreau1997cellular,
+  title={Cellular basis of hypocotyl growth in Arabidopsis thaliana},
+  author={Gendreau, E. and Traas, J. and Desnos, T. and Grandjean, O. and Caboche, M. and Hofte, H.},
+  journal={Plant Physiology},
+  volume={114},
+  number={1},
+  pages={295--305},
+  year={1997},
+  publisher={Am Soc Plant Biol}
+}
+
+
+@article{gendreau1998phytochrome,
+  title={Phytochrome controls the number of endoreduplication cycles in the Arabidopsis thaliana hypocotyl},
+  author={Gendreau, E. and H{\"o}fte, H. and Grandjean, O. and Brown, S. and Traas, J.},
+  journal={The Plant Journal},
+  volume={13},
+  number={2},
+  pages={221--230},
+  year={1998},
+  publisher={Wiley Online Library}
+}
+
+@article{EMS_Arabidopsis,
+  title={EMS mutagenesis of Arabidopsis},
+  author={Kim, Y. and Schumaker, K.S. and Zhu, J.},
+  journal={Methods in Molecular Biology-Clifton-Totowa},
+  volume={323},
+  pages={101},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{Art_of_Arabidopsis_Screens,
+  title={The art and design of genetic screens: Arabidopsis thaliana},
+  author={Page, D.R. and Grossniklaus, U. and others},
+  journal={Nature Reviews Genetics},
+  volume={3},
+  number={2},
+  pages={124--136},
+  year={2002}
+}
+
+@article{ossowski2010rate,
+  title={The rate and molecular spectrum of spontaneous mutations in Arabidopsis thaliana},
+  author={Ossowski, S. and Schneeberger, K. and Lucas-Lled{\'o}, J.I. and Warthmann, N. and Clark, R.M. and Shaw, R.G. and Weigel, D. and Lynch, M.},
+  journal={Science},
+  volume={327},
+  number={5961},
+  pages={92--94},
+  year={2010},
+  publisher={American Association for the Advancement of Science}
+}
+
+
+@article{bentley2008accurate,
+  title={Accurate whole human genome sequencing using reversible terminator chemistry},
+  author={Bentley, D.R. and Balasubramanian, S. and Swerdlow, H.P. and Smith, G.P. and Milton, J. and Brown, C.G. and Hall, K.P. and Evers, D.J. and Barnes, C.L. and Bignell, H.R. and others},
+  journal={Nature},
+  volume={456},
+  number={7218},
+  pages={53--59},
+  year={2008},
+  publisher={Nature Publishing Group}
+}
+
+@article{austin2011next,
+  title={Next-generation mapping of Arabidopsis genes},
+  author={Austin, R.S. and Vidaurre, D. and Stamatiou, G. and Breit, R. and Provart, N.J. and Bonetta, D. and Zhang, J. and Fung, P. and Gong, Y. and Wang, P.W. and others},
+  journal={The Plant Journal},
+  volume={67},
+  number={4},
+  pages={715--725},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+
+@article{lamesch2012arabidopsis,
+  title={The Arabidopsis Information Resource (TAIR): improved gene annotation and new tools},
+  author={Lamesch, P. and Berardini, T.Z. and Li, D. and Swarbreck, D. and Wilks, C. and Sasidharan, R. and Muller, R. and Dreher, K. and Alexander, D.L. and Garcia-Hernandez, M. and others},
+  journal={Nucleic acids research},
+  volume={40},
+  number={D1},
+  pages={D1202--D1210},
+  year={2012},
+  publisher={Oxford Univ Press}
+}
+
+
+%%%%%%
+%%%
+%%%%
+
+
+@article{tanaka2008photoactivatable,
+  title={Photoactivatable crosslinking sugars for capturing glycoprotein interactions},
+  author={Tanaka, Y. and Kohler, J.J.},
+  journal={Journal of the American Chemical Society},
+  volume={130},
+  number={11},
+  pages={3278--3279},
+  year={2008},
+  publisher={ACS Publications}
+}
+
+@book{klan2009photochemistry,
+  title={Photochemistry of organic compounds: from concepts to practice},
+  author={Kl{\'a}n, P. and Wirz, J.},
+  year={2009},
+  publisher={Wiley-Blackwell}
+}
+
+
+@article{huss2002concanamycin,
+  title={Concanamycin A, the specific inhibitor of V-ATPases, binds to the Vo subunit c},
+  author={Huss, M. and Ingenhorst, G. and K{\"o}nig, S. and Ga{\ss}el, M. and Dr{\"o}se, S. and Zeeck, A. and Altendorf, K. and Wieczorek, H.},
+  journal={Journal of Biological Chemistry},
+  volume={277},
+  number={43},
+  pages={40544--40548},
+  year={2002},
+  publisher={ASBMB}
+}
+
+@article{zhang1994location,
+  title={The location of the chromophore in rhodopsin: a photoaffinity study},
+  author={Zhang, H. and Lerro, K.A. and Yamamoto, T. and Lien, T.H. and Sastry, L. and Gawinowicz, M.A. and Nakanishi, K.},
+  journal={Journal of the American Chemical Society},
+  volume={116},
+  number={22},
+  pages={10165--10173},
+  year={1994},
+  publisher={ACS Publications}
+}
+
+@article{brunner19803,
+  title={3-Trifluoromethyl-3-phenyldiazirine. A new carbene generating group for photolabeling reagents},
+  author={Brunner, J. and Senn, H. and Richards, FM},
+  journal={Journal of Biological Chemistry},
+  volume={255},
+  number={8},
+  pages={3313--3318},
+  year={1980},
+  publisher={ASBMB}
+}
+
+@article{hatanaka1994novel,
+  title={A novel biotinylated heterobifunctional cross-linking reagent bearing an aromatic diazirine},
+  author={Hatanaka, Y. and Hashimoto, M. and Kanaoka, Y.},
+  journal={Bioorganic \& medicinal chemistry},
+  volume={2},
+  number={12},
+  pages={1367--1373},
+  year={1994},
+  publisher={Elsevier}
+}
+
+@article{krauth2009heterobifunctional,
+  title={Heterobifunctional isotope-labeled amine-reactive photo-cross-linker for structural investigation of proteins by matrix-assisted laser desorption/ionization tandem time-of-flight and electrospray ionization LTQ-Orbitrap mass spectrometry},
+  author={Krauth, F. and Ihling, C.H. and R{\"u}ttinger, H.H. and Sinz, A.},
+  journal={Rapid Communications in Mass Spectrometry},
+  volume={23},
+  number={17},
+  pages={2811--2818},
+  year={2009},
+  publisher={Wiley Online Library}
+}
+
+@article{smith1985filamentous,
+  title={Filamentous fusion phage: novel expression vectors that display cloned antigens on the virion surface.},
+  author={Smith, G.P. and others},
+  journal={Science (New York, NY)},
+  volume={228},
+  number={4705},
+  pages={1315},
+  year={1985}
+}
+
+@article{piggott2009rapid,
+  title={Rapid isolation of novel FK506 binding proteins from multiple organisms using gDNA and cDNA T7 phage display},
+  author={Piggott, A.M. and Kriegel, A.M. and Willows, R.D. and Karuso, P.},
+  journal={Bioorganic \& medicinal chemistry},
+  volume={17},
+  number={19},
+  pages={6841--6850},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{zhu2003protein,
+  title={Protein chip technology},
+  author={Zhu, H. and Snyder, M.},
+  journal={Current opinion in chemical biology},
+  volume={7},
+  number={1},
+  pages={55--63},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{bergmann1994hexestrol,
+  title={Hexestrol Diazirine Photoaffinity Labeling Reagent for the Estrogen Receptor},
+  author={Bergmann, K.E. and Carlson, K.E. and Katzenellenbogen, J.A.},
+  journal={Bioconjugate Chemistry},
+  volume={5},
+  number={2},
+  pages={141--150},
+  year={1994},
+  publisher={ACS Publications}
+}
+
+@book{chow2007latca,
+  title={LATCA: a library of biologically active small molecules for plant chemical genomics},
+  author={Chow, Freeman Tsz-fung},
+  year={2007},
+  publisher={University of Toronto (Canada)}
+}
+
+@incollection{lightner199814seed,
+  title={Seed Mutagenesis of Arabidopsis},
+  author={Lightner, Jonathan and Caspar, Timothy},
+  booktitle={Arabidopsis protocols},
+  pages={91--102},
+  year={1998},
+  publisher={Springer}
+}
