@@ -1,0 +1,517 @@
+%https://www.writelatex.com/461134mrdfhv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Proceedings of the National Academy of Sciences (PNAS)
+% LaTeX Template
+% Version 1.0 (19/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% The PNAStwo class was created and is owned by PNAS:
+% http://www.pnas.org/site/authors/LaTex.xhtml
+% This template has been modified from the blank PNAS template to include
+% examples of how to insert content and drastically change commenting. The
+% structural integrity is maintained as in the original blank template.
+%
+% Original header:
+%% PNAStmpl.tex
+%% Template file to use for PNAS articles prepared in LaTeX
+%% Version: Apr 14, 2008
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+% BASIC CLASS FILE
+%------------------------------------------------
+
+%% PNAStwo for two column articles is called by default.
+%% Uncomment PNASone for single column articles. One column class
+%% and style files are available upon request from pnas@nas.edu.
+
+%\documentclass{pnasone}
+\documentclass{pnastwo}
+
+%------------------------------------------------
+% POSITION OF TEXT
+%------------------------------------------------
+
+%% Changing position of text on physical page:
+%% Since not all printers position
+%% the printed page in the same place on the physical page,
+%% you can change the position yourself here, if you need to:
+
+% \advance\voffset -.5in % Minus dimension will raise the printed page on the 
+                         %  physical page; positive dimension will lower it.
+
+%% You may set the dimension to the size that you need.
+
+%------------------------------------------------
+% GRAPHICS STYLE FILE
+%------------------------------------------------
+
+%% Requires graphics style file (graphicx.sty), used for inserting
+%% .eps/image files into LaTeX articles.
+%% Note that inclusion of .eps files is for your reference only;
+%% when submitting to PNAS please submit figures separately.
+
+%% Type into the square brackets the name of the driver program 
+%% that you are using. If you don't know, try dvips, which is the
+%% most common PC driver, or textures for the Mac. These are the options:
+
+% [dvips], [xdvi], [dvipdf], [dvipdfm], [dvipdfmx], [pdftex], [dvipsone],
+% [dviwindo], [emtex], [dviwin], [pctexps], [pctexwin], [pctexhp], [pctex32],
+% [truetex], [tcidvi], [vtex], [oztex], [textures], [xetex]
+
+\usepackage{graphicx}
+
+%------------------------------------------------
+% OPTIONAL POSTSCRIPT FONT FILES
+%------------------------------------------------
+
+%% PostScript font files: You may need to edit the PNASoneF.sty
+%% or PNAStwoF.sty file to make the font names match those on your system. 
+%% Alternatively, you can leave the font style file commands commented out
+%% and typeset your article using the default Computer Modern 
+%% fonts (recommended). If accepted, your article will be typeset
+%% at PNAS using PostScript fonts.
+
+% Choose PNASoneF for one column; PNAStwoF for two column:
+%\usepackage{PNASoneF}
+%\usepackage{PNAStwoF}
+
+%------------------------------------------------
+% ADDITIONAL OPTIONAL STYLE FILES
+%------------------------------------------------
+
+%% The AMS math files are commonly used to gain access to useful features
+%% like extended math fonts and math commands.
+
+\usepackage{amssymb,amsfonts,amsmath}
+
+%------------------------------------------------
+% OPTIONAL MACRO FILES
+%------------------------------------------------
+
+%% Insert self-defined macros here.
+%% \newcommand definitions are recommended; \def definitions are supported
+
+%\newcommand{\mfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+%\def\s{\sigma}
+
+%------------------------------------------------
+% DO NOT EDIT THIS SECTION
+%------------------------------------------------
+
+%% For PNAS Only:
+\contributor{Submitted to Proceedings of the National Academy of Sciences of the United States of America}
+\url{www.pnas.org/cgi/doi/10.1073/pnas.0709640104}
+\copyrightyear{2008}
+\issuedate{Issue Date}
+\volume{Volume}
+\issuenumber{Issue Number}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHORS
+%----------------------------------------------------------------------------------------
+
+\title{Twisted Growth, Small Molecules, and Phenotype Morphometrics} % For titles, only capitalize the first letter
+
+%------------------------------------------------
+
+%% Enter authors via the \author command.  
+%% Use \affil to define affiliations.
+%% (Leave no spaces between author name and \affil command)
+
+%% Note that the \thanks{} command has been disabled in favor of
+%% a generic, reserved space for PNAS publication footnotes.
+
+%% \author{<author name>
+%% \affil{<number>}{<Institution>}} One number for each institution.
+%% The same number should be used for authors that
+%% are affiliated with the same institution, after the first time
+%% only the number is needed, ie, \affil{number}{text}, \affil{number}{}
+%% Then, before last author ...
+%% \and
+%% \author{<author name>
+%% \affil{<number>}{}}
+
+%% For example, assuming Garcia and Sonnery are both affiliated with
+%% Universidad de Murcia:
+%% \author{Roberta Graff\affil{1}{University of Cambridge, Cambridge,
+%% United Kingdom},
+%% Javier de Ruiz Garcia\affil{2}{Universidad de Murcia, Bioquimica y Biologia
+%% Molecular, Murcia, Spain}, \and Franklin Sonnery\affil{2}{}}
+
+\author{Andrew J. Defries\affil{1}{University of California, Riverside, USA},
+Michaela Spitzer\affil{2}{University of Edinburgh, UK},
+Kristine Azar\affil{1},
+Michael Pirrung\affil{1},
+\and
+Sean Cutler\affil{1}{}}
+%Mike Tyers?
+
+\contributor{Submitted to Proceedings of the National Academy of Sciences
+of the United States of America}
+
+%----------------------------------------------------------------------------------------
+
+\maketitle % The \maketitle command is necessary to build the title page
+
+\begin{article}
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT, KEYWORDS AND ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+Chemical genetic exploration of the clickable library of 4,000 terminal acetylenes revealed an iodo-acetylene containing verbanone, CLK026D11. The synthetic volatile compound, CLK026D11, strongly inhibited growth of {\it Arabidopsis thaliana} in growth media and was potent also as a volatile exchanged from impregnated media. A developmental analysis was performed with {\it Arabidopsis} as well as other angiosperms to elaborate the spectrum of defects caused by administration of CLK026D11. Morphological defects involving swollen and twisted hypocotyl cell files. Through collaborative efforts the bioactive spectrum of CLK026D11 was determined for the model plant {\it Arabidopsis thaliana}, the model yeast {\it Saccharomyces cerevisiae}, model bread mold {\it Neurospora crassa}. The molecular target of CLK026D11 is not known, and evidence is presented hereforth to accelerate future advances.
+\end{abstract}
+
+%------------------------------------------------
+
+\keywords{Keyword1 | Keyword2 | Keyword3} % When adding keywords, separate each term with a straight line: |
+
+%------------------------------------------------
+
+%% Optional for entering abbreviations, separate the abbreviation from
+%% its definition with a comma, separate each pair with a semicolon:
+%% for example:
+%% \abbreviations{SAM, self-assembled monolayer; OTS,
+%% octadecyltrichlorosilane}
+
+% \abbreviations{}
+\abbreviations{SAM, self-assembled monolayer; OTS, octadecyltrichlorosilane}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION CONTENT
+%----------------------------------------------------------------------------------------
+
+%% The first letter of the article should be drop cap: \dropcap{} e.g.,
+%\dropcap{I}n this article we study the evolution of ''almost-sharp'' fronts
+
+\section{Introduction}
+
+\dropcap{N}he growth of the dicotyledonous plant {\it Arabidopsis} follows a simple and distinct set of developmental milestones (Figure ~\ref{fig:GrowthandDevelopment}). When the seed absorbs water and is properly chilled at 4${}^\circ$ C for four days the seed will germinate (Figure ~\ref{fig:GrowthandDevelopment} stage 01). Hydrostatic pressure causes the radicle, or primordial root, to emerge from the seed coat (Figure ~\ref{fig:GrowthandDevelopment} stage 3-5). Hypocotyl elongation is exaggerated in the dark and will continue until exposed to light (Figure ~\ref{fig:GrowthandDevelopment} stage 6-9)\cite{lehman1996hookless1}. The hypocotyl elongation aids the escape from the seed husk while the cotyledon and apical hook retain a protective angle until permissive conditions arise, as will be detailed.
+
+The apical meristem, the future above ground body of the plant is a subpopulation of totipotential cells \cite{westhoff1998molecular}. This important population of cell is physically protected from damage during seedling emergence by a coordinated process between the cell adjacent to the cotyledon on the stem (Figure ~\ref{fig:CotyledonandAngleDemo}A-E). These cells grow at an uneven rate on the apical and basal side of the stem to preserve the apical hook. Exposure to light accompanied with soil emergence causes a loss of skotomorphogenesis or differential cellular growth and the apical hook \cite{guzman1990exploiting}. During this process the cotyledon is changing internal metabolism, enlarges, and emerges from the soil gravitropically and then peels back (Figure ~\ref{fig:CotyledonandAngleDemo}B-C) to begin the first true leaf development from stem cells in the apical meristem (Figure ~\ref{fig:CotyledonandAngleDemo}C) \cite{westhoff1998molecular}.
+
+Growth of dicots in the dark is characterized by cell elongation in the direction opposite to gravity, and this response terminates in response to light. Etiolated anisotropic hypocotyl expansion is a phenotypic process limited by hydrostatic processes in elongation and expansion regulated by cell wall synthesis and developmental programs \cite{ishida2007twisted,lehman1996hookless1}. Etiolated growth facilitates emergence from the ground, and leads to an ideal spatial separation of the root and shoot with air, water and light gradients that dictate future organ differentiation in response to photosynthesis. It is our goal to discover compounds that perturb any or all of the processes of etiolated growth and intend to study these bioactives to determine the overall mechanism of action.
+
+%------------------------------------------------
+
+\section{Results}
+
+We have identified several bioactives from a novel small molecule library of terminal acetylenes that are promising probes for plant chemical genetics. Final lead probes were discovered by first chemical genetic screening of the model plant {\it Arabidopsis thaliana} and model yeast {it Saccharomyces cerevisiae} on the terminal acetylene four thousand compound building block library. m {\%} were bioactive in plant Figure \ref{ScreenTreeFlowChartWPercent} , and z {\%} were bioactive in yeast Figure \ref{ScreenTreeFlowChartWPercent}. Compounds that caused a change in the typical growth and development were considered bioactive. Bioactive terminal acetylenes were found to span several domains of chemical space Figure \ref{Clickable_rgl_color}. We navigated this chemical space using a high throughput combinatorial approach and found three probes amenable to functionalization into photoaffinity ligand without a loss in bioactivity.
+
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.35]{img59}
+\caption{Clade of compounds related to CLK026D11 possessing a camphor-like carbon skeleton shown as black dots. Colors indicate compounds that group together and are 70{\%} similar. The number of colors for plotting is limited as such the colors have been re-used on other clades.}
+\label{fig:CamphorLikeClade}
+\end{figure}
+
+Clade N, with the core iodoacetylene member CLK026D11 was compared to compounds with similar pinane-like and adamantane carbon skeletons in the clickable library (Figure ~\ref{fig:CamphorLikeClade}A, inset blue circle, see supplementary table). Despite possessing similar carbon skeletons or iodoacetylenes the compounds CLK026D11 and CLK026H11 distinctly caused the same phenotype (Figure ~\ref{fig:PTFP2}). CLK026D11 is similar to compounds in natural product datasets, and this may be a consequence of the synthesis of CLK026D11 and CLK026H11 from verbenone and verbanone respectively (Figure ~\ref{fig:CLK026D11Retrosynthesis}A-D)\cite{dikusar2001synthesis}.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.35]{img60}
+\caption{Reported synthesis of CLK026D11 from verbanone.}
+\label{fig:CLK026D11Retrosynthesis}
+\end{figure}
+
+\subsubsection{CLK026D11 is a potent volatile inhibitor of anisotropic growth}
+
+Volatiles, such as ethylene, can function as growth regulators in plants \cite{lehman1996hookless1}. Preparation of the iodoacetylenes CLK026D11 and CLK026H11 describes the compounds as unstable, although 1HNMR analysis confirmed the structure as reported \cite{dikusar2001synthesis}. Volatility of CLK026D11 was suspected due to a low molecular weight and the reason for observed variation on the edges of treatment and control plates. An experiment was conducted to demonstrate CLK026D11 was potent at a distance. {\it Arabidopsis} was grown in media vertically and another plate containing compound was placed on top to exchange head space.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.35]{img61}
+\caption{CL026D11 is bioactive as a volatile. A. Merge of DMSO. B. Increasing doses of CLK026D11 causes a significant growth defect as low as 1$\mu$M. C. Iodine and the headspace of this plate does not cause growth inhibition. D. The head space of CLK026D11 (D5H) causes similar growth defects as plants grown directly on the same dose. Doses are denoted D1-5 for 1, 5, 10,, 15, 25 $\mu$M.}
+\label{fig:CLK026D11ComesThroughTheAir}
+\end{figure}
+%annotate image more to follow comparison symbols or circles.
+
+Growth of plates containing DMSO alone showed typical bagplot variance whereas CLK026D11 was potent to inhibit hypocotyl and root growth down to 1 $\mu$M (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}A and B). Iodine was used as a control as it was suspected that the iodoacetylene CLK026D11 may degrade to release iodine. Nonetheless, iodine at all concentrations was inactive, and did not cause a phenotype by exchanging head space with the control plate (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}C).  CLK026D11 was potent to produce identical phenotypes in seedlings on the control plate when place a few centimeters away at 25 $\mu$M doses (Figure ~\ref{fig:CLK026D11ComesThroughTheAir}D).
+
+\subsubsection{Cellular features of the perturbation caused by CLK026D11}
+
+\begin{figure}
+\includegraphics[scale=0.10]{img62}
+\caption{CLK026D11 causes anisotropic hypocotyl growth phenotypes with a handedness similar to chuboxypyr. A. Columbia-0 seedling control treatment (1{\%} DMSO). B. 25$\mu$M of chuboxypyr causes right handed twisting of cell files in the hypocotyl. C. 1 $\mu$M dose of CLK026D11 causes a similar right handed twisting defect with enhanced severity. D. 5 $\mu$M of CLK026D11 causes loss of cell polarity and leads to swollen and bulging cells. Scale bar shows 300 $\mu$ meters.}
+\label{fig:CLK026D11SEM}
+\end{figure}
+
+Low doses of CLK026D11 and structurally dissimilar chuboxypyr \cite{Zhao_Hyr1} induced right handed helical hypocotyl twisting as visualized by scanning electrom microscopy (SEM) (Figure ~\ref{fig:CLK026D11SEM}B and C), whereas higher doses disrupted etiolated ansiotropoic hypocotyl expansion to result in radially expanding cells rather than typical expansion lengthwise against gravity (Figure ~\ref{fig:CLK026D11SEM}D). These growth features were known to be caused by a number of structurally dissimilar compounds such as oryzalin \cite{bannigan2006cortical,bartels1973comparison}, taxol \cite{baskin1994morphology,morejohn1987oryzalin}, and morlin \cite{debolt2007morlin} with modes of action related to microtubule homeostasis [185] and cellulose synthase function (CeSA) \cite{debolt2007morlin}.
+
+%%%%%%%%%%%  add info about yeast dose curve, and finish with algae motility problem
+
+
+%%%%% morphometrics piece
+
+
+
+%------------------------------------------------
+
+\section{Discussion}
+
+\subsubsection{CLK026D11 is unique and potent bioactive but could not be used to reveal mechanism of action (MOA)}
+
+Exploration of the swollen cell phenotype caused by CLK026D11 and CLK026H11 (Clade O) is of significance to elucidate molecular and cellular events that lead to the adaptive evolution of skotomorphogenesis and etiolated growth in a number of angiosperms \cite{gendreau1997cellular, gendreau1998phytochrome}. The clade N compounds phenocopy mutants characterized as microtubule proteins \cite{nakamura2004low} and can be examined further with mutant analysis. 
+
+%explain this assay in methods as well as iodine dissolution
+
+
+%Bioactivity of CLK026D11 across Eukaryotic taxa (data not shown) was interesting but did not provide complementary evidence to determine the MOA in {\it Arabidopsis}. 
+
+Clade M is has probes that come with a literature history, thus when evidence is discovered there is already information available for comparison. We will see how one of two clade M probes can be used to find the responsible allele in Chapter 5. Target identification efforts with EMS. 
+
+The bioactivity of the CLK026D11 was interesting but was difficult to determine MOA in {\it Arabidopsis} since the compound was volatile in the growth media and caused a significant amount of phenotype variation in large plates. CLK026D11 did participate in the click reaction to give the expected product, but was not bioactive when reacted with the fluorophore azide building blocks tested. Therefore, CLK026D11 was not useful, in our scheme, as a tagged compound and was discarded.
+
+
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS AND METHODS
+%----------------------------------------------------------------------------------------
+
+%% Optional Materials and Methods Section
+%% The Materials and Methods section header will be added automatically.
+
+\begin{materials}
+
+\subsection{Preparation of assay plates for the testing of the bioactive volatile CLK026D11}
+
+Single well assay plates (NUNC) were grown vertically and taped together with different doses of 1, 5, 10, 15, 25 $\mu$M CLK026D11 and (1{\%}) DMSO was used as control. Growth media and seed preparation was indicated previously (Materials and Methods: Chapter 3), except seedlings were placed onto the media on the fourth day or the first day of growth in dark. Plates were photographed on the seventh day using a digital camera and LED transillumination. 
+
+%\subsection{Qualitative bagplot: image aquisition, photography setup, and digital processing for length variables}
+
+\subsection{Quantitative bagplot: image acquisition, photography setup, and digital processing for length variables}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{2D_Capture}
+\caption{Two dimensional capture of vertically grown {\it Arabidopsis thaliana} by digital imaging. A. Photographs were taken of the assay plate from a fixed distance above plates transilluminated from below. B. Measurements of the hypocotyl (shown as x variable for x-axis) and root (shown as y variable for y-axis are conducted using ImageJ. C. Demonstration of typical control (DMSO 1{\%} data plotted as a bi-variate x-y graph for hypocotyl and root length of Col and Ler seedlings.)}
+\label{fig:2D_Capture}
+\end{figure}
+
+Images for quantitative bagplots were acquired using a hand held 2.0 Mega Pixel digital camera. Assay plates were photographed using standard position and distances for consistancy (Figure~\ref{fig:2D_Capture}). Illumination was provided by an LED transilluminator placed directly underneath the assay plates. Photographs were measured by hand using the ImageJ polyline tool. Hypocotyl and root variables were exported from ImageJ and processed in R using the bivariate bagplot() call in the package aplapack.
+
+%\subsection{Bivariate bagplot using Bioconductor aplpack)
+
+%R code
+
+\subsection{Preparation of {\it Arabidopsis} for scanning electron microscopy}
+
+Arabidopsis seedlings prepared identically to the chemical genetic screen are imbibed for 4 days at 4${}^\circ$ C and grown for 3 days in the dark. On the final day seedlings were transferred directly onto a Hitachi scanning electron microscope (SEM) specimen stage with adhesive and flash frozen immediately using isopentane chilled via liquid nitrogen. The sample was placed into the vacuum chamber of the SEM for electron scan and imaging. 
+
+
+
+\end{materials}
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES (OPTIONAL)
+%----------------------------------------------------------------------------------------
+
+\appendix
+An appendix without a title.
+
+\appendix[Appendix title]
+An appendix with a title.
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgments}
+This work was partially supported by a grant from the Spanish Ministry of Science and Technology.
+\end{acknowledgments}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%% PNAS does not support submission of supporting .tex files such as BibTeX.
+%% Instead all references must be included in the article .tex document. 
+%% If you currently use BibTeX, your bibliography is formed because the 
+%% command \verb+\bibliography{}+ brings the <filename>.bbl file into your
+%% .tex document. To conform to PNAS requirements, copy the reference listings
+%% from your .bbl file and add them to the article .tex file, using the
+%% bibliography environment described above.  
+
+%%  Contact pnas@nas.edu if you need assistance with your
+%%  bibliography.
+
+% Sample bibliography item in PNAS format:
+%% \bibitem{in-text reference} comma-separated author names up to 5,
+%% for more than 5 authors use first author last name et al. (year published)
+%% article title  {\it Journal Name} volume #: start page-end page.
+%% ie,
+% \bibitem{Neuhaus} Neuhaus J-M, Sitcher L, Meins F, Jr, Boller T (1991) 
+% A short C-terminal sequence is necessary and sufficient for the
+% targeting of chitinases to the plant vacuole. 
+% {\it Proc Natl Acad Sci USA} 88:10362-10366.
+
+
+%% Enter the largest bibliography number in the facing curly brackets
+%% following \begin{thebibliography}
+
+\begin{thebibliography}{10}
+\bibitem{BN}
+M.~Belkin and P.~Niyogi, {\em Using manifold structure for partially
+  labelled classification}, Advances in NIPS, 15 (2003).
+
+\bibitem{BBG:EmbeddingRiemannianManifoldHeatKernel}
+P.~B\'erard, G.~Besson, and S.~Gallot, {\em Embedding {R}iemannian
+  manifolds by their heat kernel}, Geom. and Fun. Anal., 4 (1994),
+  pp.~374--398.
+
+\bibitem{CLAcha1}
+R.R.~Coifman and S.~Lafon, {\em Diffusion maps}, Appl. Comp. Harm. Anal.,
+  21 (2006), pp.~5--30.
+
+\bibitem{DiffusionPNAS}
+R.R.~Coifman, S.~Lafon, A.~Lee, M.~Maggioni, B.~Nadler, F.~Warner, and
+  S.~Zucker, {\em Geometric diffusions as a tool for harmonic analysis and
+  structure definition of data. {P}art {I}: Diffusion maps}, Proc. of Nat.
+  Acad. Sci.,  (2005), pp.~7426--7431.
+
+\bibitem{Clementi:LowDimensionaFreeEnergyLandscapesProteinFolding}
+P.~Das, M.~Moll, H.~Stamati, L.~Kavraki, and C.~Clementi, {\em
+  Low-dimensional, free-energy landscapes of protein-folding reactions by
+  nonlinear dimensionality reduction}, P.N.A.S., 103 (2006), pp.~9885--9890.
+
+\bibitem{DoGri}
+D.~Donoho and C.~Grimes, {\em Hessian eigenmaps: new locally linear
+  embedding techniques for high-dimensional data}, Proceedings of the National
+  Academy of Sciences, 100 (2003), pp.~5591--5596.
+
+\bibitem{DoGri:WhenDoesIsoMap}
+D.~L. Donoho and C.~Grimes, {\em When does isomap recover natural
+  parameterization of families of articulated images?}, Tech. Report Tech. Rep.
+  2002-27, Department of Statistics, Stanford University, August 2002.
+
+\bibitem{GruterWidman:GreenFunction}
+M.~Gr\"uter and K.-O. Widman, {\em The {G}reen function for uniformly
+  elliptic equations}, Man. Math., 37 (1982), pp.~303--342.
+
+\bibitem{Simon:NeumannEssentialSpectrum}
+R.~Hempel, L.~Seco, and B.~Simon, {\em The essential spectrum of neumann
+  laplacians on some bounded singular domains}, 1991.
+
+\bibitem{1}
+Kadison, R.\ V.\ and Singer, I.\ M.\ (1959)
+Extensions of pure states, {\it Amer.\ J.\ Math.\ \bf
+81}, 383-400.
+
+\bibitem{2}
+Anderson, J.\ (1981) A conjecture concerning the pure states of
+$B(H)$ and a related theorem. in {\it Topics in Modern Operator
+Theory}, Birkha\"user, pp.\ 27-43.
+
+\bibitem{3}
+Anderson, J.\ (1979) Extreme points in sets of
+positive linear maps on $B(H)$. {\it J.\ Funct.\
+Anal.\
+\bf 31}, 195-217.
+
+\bibitem{4}
+Anderson, J.\ (1979) Pathology in the Calkin algebra. {\it J.\
+Operator Theory \bf 2}, 159-167.
+
+\bibitem{5}
+Johnson, B.\ E.\ and Parrott, S.\ K.\ (1972) Operators commuting
+with a von Neumann algebra modulo the set of compact operators.
+{\it J.\ Funct.\ Anal.\ \bf 11}, 39-61.
+
+\bibitem{6}
+Akemann, C.\ and Weaver, N.\ (2004) Consistency of a
+counterexample to Naimark's problem. {\it Proc.\ Nat.\ Acad.\
+Sci.\ USA \bf 101}, 7522-7525.
+
+\bibitem{TSL}
+J.~Tenenbaum, V.~de~Silva, and J.~Langford, {\em A global geometric
+  framework for nonlinear dimensionality reduction}, Science, 290 (2000),
+  pp.~2319--2323.
+
+\bibitem{ZhaZha}
+Z.~Zhang and H.~Zha, {\em Principal manifolds and nonlinear dimension
+  reduction via local tangent space alignement}, Tech. Report CSE-02-019,
+  Department of computer science and engineering, Pennsylvania State
+  University, 2002.
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{article}
+
+%----------------------------------------------------------------------------------------
+%	FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+%% Adding Figure and Table References
+%% Be sure to add figures and tables after \end{article}
+%% and before \end{document}
+
+%% For figures, put the caption below the illustration.
+%%
+%% \begin{figure}
+%% \caption{Almost Sharp Front}\label{afoto}
+%% \end{figure}
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=0.4\linewidth]{placeholder.jpg}}
+\caption{Figure caption}\label{placeholder}
+\end{figure}
+
+%% For Tables, put caption above table
+%%
+%% Table caption should start with a capital letter, continue with lower case
+%% and not have a period at the end
+%% Using @{\vrule height ?? depth ?? width0pt} in the tabular preamble will
+%% keep that much space between every line in the table.
+
+%% \begin{table}
+%% \caption{Repeat length of longer allele by age of onset class}
+%% \begin{tabular}{@{\vrule height 10.5pt depth4pt  width0pt}lrcccc}
+%% table text
+%% \end{tabular}
+%% \end{table}
+
+\begin{table}[h]
+\caption{Table caption}\label{sampletable}
+\begin{tabular}{l l l}
+\hline
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\hline
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\hline
+\end{tabular}
+\end{table}
+
+%% For two column figures and tables, use the following:
+
+%% \begin{figure*}
+%% \caption{Almost Sharp Front}\label{afoto}
+%% \end{figure*}
+
+%% \begin{table*}
+%% \caption{Repeat length of longer allele by age of onset class}
+%% \begin{tabular}{ccc}
+%% table text
+%% \end{tabular}
+%% \end{table*}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
