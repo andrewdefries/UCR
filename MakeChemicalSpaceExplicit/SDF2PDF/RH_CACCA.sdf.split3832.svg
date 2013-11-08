@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cml="http://www.xml-cml.org/schema" width="453.379" height="200.015" x="0" y="0" font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="1"  stroke-linecap="round">
+<rect x="0%" y="0%" width="100%" height="100%" stroke-width="0" fill="rgb(255,255,255)"  />
+<line x1="251.5" y1="106.5" x2="274.8" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="378.8" y1="100.0" x2="344.1" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="170.9" y1="100.0" x2="205.5" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="402.1" y1="86.5" x2="378.8" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="404.2" y1="90.2" x2="380.9" y2="103.6" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="400.0" y1="82.9" x2="376.7" y2="96.4" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="205.5" y1="120.0" x2="229.0" y2="106.5" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="271.8" y1="147.0" x2="271.8" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="277.8" y1="147.0" x2="277.8" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="298.3" y1="106.5" x2="274.8" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="344.1" y1="120.0" x2="320.8" y2="106.5" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="205.5" y1="147.0" x2="205.5" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="76.0" y1="51.7" x2="101.6" y2="60.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="101.6" y1="60.0" x2="101.6" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="94.4" y1="66.0" x2="94.4" y2="94.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="101.6" y1="100.0" x2="76.0" y2="108.3" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="56.0" y1="101.8" x2="40.0" y2="80.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="40.0" y1="80.0" x2="56.0" y2="58.2" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="101.6" y1="60.0" x2="136.2" y2="40.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="136.2" y1="40.0" x2="170.9" y2="60.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="137.8" y1="49.2" x2="162.1" y2="63.2" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="170.9" y1="60.0" x2="170.9" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="170.9" y1="100.0" x2="136.2" y2="120.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="162.1" y1="96.8" x2="137.8" y2="110.8" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="136.2" y1="120.0" x2="101.6" y2="100.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<text x="234.228025" y="108.007309" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="234.228025" y="92.007309" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="407.378812" y="88.004873" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="57.639243" y="120.333659" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="57.639243" y="55.680936" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="268.777688" y="168.014618" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="303.526163" y="108.007309" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="303.526163" y="92.007309" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="201.474701" y="168.014618" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="225.474701" y="171.694618" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text font-size="18.000000" fill ="black" font-family="sans-serif"
+x="10.000000" y="20.000000" ></text>
+<title> - OBDepict</title>
+</svg>

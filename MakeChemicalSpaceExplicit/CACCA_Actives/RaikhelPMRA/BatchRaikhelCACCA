@@ -1,0 +1,20 @@
+> plotMCS(fmcs(sdf[1], sdf[12], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[3], sdf[13], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[2], sdf[4], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[4], sdf[5], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[6], sdf[7], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[7], sdf[14], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[10], sdf[16], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[8], sdf[15], au=0, bu=0, matching.mode="aromatic"))
+> plotMCS(fmcs(sdf[9], sdf[11], au=0, bu=0, matching.mode="aromatic"))
+
+
+save.file(plotMCS(...)
+
+save to png or pdf
+
+Do in batch and subset by clade export sdf and then use babel 3d systematic and to svg and plot and capture.
+
+Before export sort by overlap coefficient.
+Change CID and cat with Activity and Note
+

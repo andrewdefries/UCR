@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cml="http://www.xml-cml.org/schema" width="379.303" height="226.016" x="0" y="0" font-family="sans-serif" stroke="rgb(0,0,0)" stroke-width="1"  stroke-linecap="round">
+<rect x="0%" y="0%" width="100%" height="100%" stroke-width="0" fill="rgb(255,255,255)"  />
+<line x1="178.9" y1="146.0" x2="213.3" y2="125.6" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="316.3" y1="114.7" x2="276.5" y2="111.1" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="74.9" y1="127.7" x2="109.7" y2="147.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="51.3" y1="114.4" x2="74.9" y2="127.7" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="53.4" y1="110.8" x2="77.0" y2="124.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="49.3" y1="118.1" x2="72.9" y2="131.3" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="176.4" y1="173.1" x2="175.9" y2="146.1" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="182.4" y1="173.0" x2="181.9" y2="146.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="324.9" y1="140.5" x2="313.6" y2="116.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="330.3" y1="138.0" x2="319.0" y2="113.5" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="155.4" y1="132.9" x2="178.9" y2="146.0" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="256.0" y1="167.7" x2="250.0" y2="141.4" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="266.5" y1="51.9" x2="255.9" y2="76.8" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="109.7" y1="147.0" x2="132.8" y2="133.3" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="331.8" y1="92.6" x2="316.3" y2="114.7" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="213.3" y1="125.6" x2="215.7" y2="98.6" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="229.6" y1="82.8" x2="255.9" y2="76.8" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="255.9" y1="76.8" x2="276.5" y2="111.1" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="252.8" y1="85.6" x2="267.2" y2="109.7" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="276.5" y1="111.1" x2="250.0" y2="141.4" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="250.0" y1="141.4" x2="213.3" y2="125.6" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<line x1="247.4" y1="132.4" x2="221.6" y2="121.4" stroke="rgb(0,0,0)"  stroke-width="1.0"/>
+<text x="198.917542" y="93.642380" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >HN</text>
+<text x="22.000000" y="116.061242" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >HC</text>
+<text x="173.554387" y="194.015867" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="327.039977" y="159.081221" fill="rgb(255,12,12)"  stroke="rgb(255,12,12)" stroke-width="1" font-size="16" >O</text>
+<text x="138.008978" y="134.641025" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >N</text>
+<text x="138.008978" y="118.641025" fill="rgb(12,12,255)"  stroke="rgb(12,12,255)" stroke-width="1" font-size="16" >H</text>
+<text x="254.924430" y="188.363890" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="278.924430" y="192.043890" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="267.648649" y="48.000000" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="291.648649" y="51.680000" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text x="335.302716" y="90.011736" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="16" >CH</text>
+<text x="359.302716" y="93.691736" fill="rgb(102,102,102)"  stroke="rgb(102,102,102)" stroke-width="1" font-size="13" >3</text>
+<text font-size="18.000000" fill ="black" font-family="sans-serif"
+x="10.000000" y="20.000000" ></text>
+<title> - OBDepict</title>
+</svg>
