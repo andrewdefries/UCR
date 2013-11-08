@@ -4,6 +4,9 @@ University of California Riverside Dissertation
 Code, examples and interactive graphics
 ###################################################
 
+
+Code and related R shiny wrappers for thesis figures also included as .tex files
+
 see wiki for more:
 
 The dissertation pdf is here:
@@ -11,6 +14,14 @@ The dissertation pdf is here:
 https://db.tt/JprmoCtd
 
 
-################
-Latex on the way
-################
+Recent changes
+==============
+
+Added some webGL visualizations of the Clickable sdf file
+
+Colors represent compounds 70% similar as decided by the Taniomoto similarity coefficient
+
+
+
+
+
